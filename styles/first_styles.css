@@ -1,0 +1,47 @@
+/*  Author: Eric Shewchuk | Copyright 2023  */
+
+html {
+    background-image: url(../images/main.jpg);
+
+}
+
+body {
+    background-color: black;
+    max-width: 1000px;
+    height: 100vh;
+    margin: 0 auto 0 auto;
+    color: rgb(197, 194, 194);
+    padding: 15px;
+}
+
+header {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 20px;
+    align-items: center;
+    padding: 15px;
+}
+
+header img {
+    width: 100px;
+    margin-left: 20px;
+    outline: 2px solid brown;
+    border-radius: 50%;
+}
+
+header h1 {
+    text-align: right;
+}
+
+h1 {
+    color:brown;
+}
+
+a {
+    text-decoration: none;
+    color: burlywood;
+}
+a:hover {
+    font-size: larger;
+    color: rgb(151, 96, 24);
+}
