@@ -3,25 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Clever Primate | Eric Shewchuk's Course Website for WDD230</title>
-    <link rel="stylesheet" href="styles/first_styles.css"/>
+    <meta name="author" content="Eric Shewchuk" />
+    <meta name="description" content="WDD 230 - Web Frontend Development for Eric Shewchuk.  Use this course assignment portal for access to completed work (my portfolio)" />
+    <title>Eric Shewchuk - WDD 230 - Web Frontend Development</title>
+    <link rel="stylesheet" href="styles/base.css"/>
 </head>
 <body>
 
     <header>
         <img src="images/thoughtfulMonkey.jpg" alt="stylized image of a monkey"/>
-        <h1>Welcome To The Clever Primate</h1>
+        <h1>Eric Shewchuk</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="chamber/siteplan.html">Site Plan</a>
+            <a href="chamber/">Chamber</a>
+            <a href="#">BYU-Idaho</a>
+            <a href="#">Scripture</a>
+        </nav>
     </header>
-
     <hr>
-    
-    <h3>Please select a following link to see the assignment:</h3>
-        <p>
-            <a href="lesson01/holygrail.html" target="_blank">Week 1 Layout Assignment</a>
-        </p>
+    <main>
+        <h2>WDD 230: Web Frontend Development</h2>
+        <section class="card">
+            <h3>Learning Activities</h3>
+            <ul>
+                <li><a href="lesson01/holygrail.html" target="_blank">Week 1 Layout Assignment</a></li>
+            </ul>
+        </section>
+        <section class="card">
+            <h3>Information</h3>
+            <p>Location: <span class="info">Kauai, Hawaii</span></p>
+            <p>Weather: <span>- Functionality coming soon!</span></p>
+            <p>Page Visits: <span>- Functionality coming soon!</span></p>
+        </section>
+    </main>
     <footer>
-        <span id="date"></span>
+        <p>&copy; <span id="date"></span> Eric Shewchuk - Hawaii, USA</p>
+        <p>Last Modified: <span id="modified"></span></p>
     </footer>
-    <script src="scripts/firstPage.js"></script>   
+    <script src="scripts/getdates.js"></script>   
 </body>
 </html>
