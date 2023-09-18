@@ -40,6 +40,7 @@ main {
     background-color: rgb(38, 43, 38);
     color:azure;
     margin-bottom: 1em;
+    padding-left: 1.5em;
 }
 .example img {
     max-width: 100%;
