@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+html {
+    background-color: black;
+}
+
+body {
+    max-width: 500px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px auto;
+}
+
+header, footer {
+    width: 100%;
+    padding: 1rem;
+    margin: 10px auto;
+    text-align: center;
+    background-color: rgb(113, 134, 113);
+    border: 1px solid rgb(113, 134, 113);
+    border-radius: 1em;
+}
+
+header h1, header h3 {
+    color: white;
+    font-family: "Playfair Display", serif;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.example {
+    width: 420px;
+    border: 2px solid rgb(134, 156, 134);
+    border-radius: 1em;
+    background-color: rgb(38, 43, 38);
+    color:azure;
+    margin-bottom: 10px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px 2em;
+    color:azure;
+    font-size: larger;
+}
+
+.intro a {
+    text-decoration: none;
+    color:rgb(206, 240, 240);
+}
+
+@media (min-width: 501px) and (max-width: 1000px) {
+    body {
+        max-width: 1000px;
+    }
+
+    main {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+}
+
+@media (min-width: 1001px) {
+    main {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+}
