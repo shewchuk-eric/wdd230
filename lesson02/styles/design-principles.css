@@ -13,9 +13,10 @@ body {
 }
 
 header, footer {
-    width: 100vw;
+    justify-self: stretch;
     padding: 1rem;
-    margin: 10px auto;
+    margin-bottom: 1em;
+    margin-top: 1em;
     text-align: center;
     background-color: rgb(113, 134, 113);
     border: 1px solid rgb(113, 134, 113);
@@ -33,12 +34,16 @@ main {
 }
 
 .example {
-    width: 420px;
+    max-width: 420px;
     border: 2px solid rgb(134, 156, 134);
     border-radius: 1em;
     background-color: rgb(38, 43, 38);
     color:azure;
-    margin-bottom: 10px;
+    margin-bottom: 1em;
+    padding-left: 1.5em;
+}
+.example img {
+    max-width: 100%;
 }
 
 h2 {
