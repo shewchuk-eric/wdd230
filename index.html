@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <meta property="og:title" content="The Clever Primate Work Portfolio">
-    <meta property="og:type" content="article" />
+    <meta property="og:type" content="article">
     <meta property="og:description" content="Eric Shewchuk's WDD230 Course Portfolio.">
     <meta property="og:image" content="https://shewchuk-eric.github.io/wdd230/images/thoughtful-monkey.jpg">
     <meta property="og:url" content="https://shewchuk-eric.github.io/wdd230/">
@@ -24,11 +24,14 @@
         <img src="images/thoughtful-monkey.jpg" alt="stylized image of a monkey">
         <h1>Eric Shewchuk</h1>
         <nav>
-            <a href="#">Home</a>
-            <a href="chamber/siteplan.html">Site Plan</a>
-            <a href="chamber/">Chamber</a>
-            <a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a>
-            <a href="https://www.churchofjesuschrist.org/study/scriptures/pgp/moses/3?lang=eng&id=p24-p25#p24" target="_blank">Scripture</a>
+            <button id="menu"></button>
+            <ul class="navigation">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
+                <li><a href="chamber/">Chamber</a></li>
+                <li><a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/pgp/moses/3?lang=eng&id=p24-p25#p24" target="_blank">Scripture</a></li>
+            </ul>
         </nav>
     </header>
     <hr>
@@ -52,13 +55,14 @@
             <p>Weather: <span>- Functionality coming soon!</span></p>
             <p>Page Visits: <span>- Functionality coming soon!</span></p>
         </section>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7390.693681867929!2d-159.31325069826735!3d22.15086572189998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1695846541481!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </main>
     <footer>
         <section class="footer">
         <p>&copy; <span id="date"></span> Eric Shewchuk - Hawaii, USA</p>
-        <p>Last Modified: <span id="modified"></span></p>
+        <h4>Last Modified: </h4><span id="modified"></span>
         </section>
     </footer>
-    <script src="scripts/getdates.js"></script>   
+    <script src="scripts/getsmart.js"></script>   
 </body>
 </html>

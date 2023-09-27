@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+
+:root {
+    --main: #284b63;
+    --accent: #3c6e71;
+    --text: #353535;
+    --light: #d9d9d9;
+}
+
+html {
+    background-color: var(--light);
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+}
+
+header {
+    text-align: center;
+    font-weight: 700;
+    background-color: var(--main);
+    padding: 2rem;
+    position: sticky;
+    top: 0;
+}
+
+body {
+    max-width: 100%;
+    background-color: white;
+    margin: 0 auto;
+    padding: 1em;
+    min-width: 400px;
+}
+
+h1, h2, h3, #headings {
+    font-family: 'Allura', cursive;
+    color: var(--main);
+}
+
+#headings {
+    font-size: 4rem;
+}
+
+h1 {
+    text-align: center;
+}
+
+#colors, #mobile, #desktop {
+    max-width: 60%;
+    margin: 0px auto;
+    border: .2rem solid var(--accent);
+    border-radius: .5rem;
+    box-shadow: .5rem 1rem .9rem var(--main);
+}
+
+a {
+    text-decoration: none;
+    background-color: var(--main);
+    color: white;
+    padding: .2rem;
+}
+
+li {
+    list-style-type: none;
+}
+
+li::before {
+    content: '✔️  ';
+}
+
+/*********************
+* Wide Screen Styles *
+*********************/
+
+@media (min-width: 600px){
+    body {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    p {
+        max-width: 800px;
+    }
+
+    #frames {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    #mobile {
+        grid-column: 1/2;
+    }
+    
+    #desktop {
+        grid-column: 2/3;
+    }
+}
+

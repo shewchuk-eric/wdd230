@@ -1,8 +1,12 @@
-/*  Author: Eric Shewchuk | Copyright 2023  */
 
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+/*  Author: Eric Shewchuk | Copyright 2023  */
+
 html {
     background-image: url(../images/main.jpg);
+    background-repeat: repeat-x;
+    background-color: rgb(54, 121, 71);
 }
 
 body {
@@ -37,11 +41,72 @@ header h1 {
     color:rgb(179, 107, 59);
 }
 
-nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/************************
+* small view navigation *
+************************/
+
+#menu {
+	font-size: 1.5rem;
+	border: 1px solid rgba(0,0,0,.3);
+	padding: 3px 7px 6px;
+	background-color: burlywood;
+	color: #000;
+ 	position: relative;
+	margin-left: 90%;
+	top: -2.2rem;
 }
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "🙈";
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+}
+
+.navigation li {
+	display: none;
+}
+
+.navigation li a {
+	display: block;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: burlywood;
+}
+
+.navigation li a:hover {
+	color: rgb(151, 96, 24);
+	font-weight: 700;
+}
+
+.navigation li a.active {
+    color: black;
+    background-color: burlywood;
+    font-weight: bold;
+    border-radius: .3rem;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) and accounted for here */
+.open li {
+	display: block;
+	width: 100%;
+}
+
+.open li a {
+	display: block;
+}
+
+/*****************
+* end navigation *
+*****************/
 
 a {
     text-decoration: none;
@@ -62,6 +127,12 @@ li {
     list-style-type: none;
 }
 
+iframe {
+    grid-column: 1/3;
+    max-width: 100%;
+    margin: 0 auto .5rem auto;
+}
+
 footer {
     position: relative;
     bottom: 0px;
@@ -75,6 +146,10 @@ footer {
     grid-column: 2;
 }
 
+h4 {
+    display: inline;
+}
+
 #date {
     color: rgb(156, 231, 105);
     margin: 0px auto;
@@ -82,7 +157,7 @@ footer {
 
 @media (min-width: 600px) {
     header {
-        grid-template-columns: max-content 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         gap: 20px;
     }
 
@@ -91,16 +166,37 @@ footer {
     }
 
     header h1 {
+        grid-area: 1/2/2/4;
         font-size: 3em;
     }
 
+    /************************
+    * large view navigation *
+    ************************/
+
+    #menu {
+		display: none; /* hide hamburger button */
+	}
+
     nav {
-        grid-column: 1/3;
+        grid-area: 2/1/3/3;
+    }
+
+    .navigation {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: start;
     }
+
+	.navigation li {
+		display: block;
+		/*flex: 1 1 100%;*/
+	}
+
+    /*****************
+    * end navigation *
+    *****************/
 
     body {
         max-width: 1000px;
@@ -120,6 +216,6 @@ footer {
     }
 
     footer {
-        grid-template-columns: repeat(3 1fr);
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
