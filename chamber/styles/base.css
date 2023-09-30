@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+
+/***********************
+* set global variables *
+***********************/
+:root {
+    --main: #284b63;
+    --accent: #3c6e71;
+    --text: #353535;
+    --light: #d9d9d9;
+}
+
+/********************
+* set global styles *
+********************/
+
+html {
+    background-color: var(--text);
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    color: var(--text);
+}
+
+body {
+    background-color: white;
+    min-width: 450px;
+    margin: 0 auto;
+    border: 3px solid var(--accent);
+}
+
+.hero {
+    max-width: 100%;
+    margin: 0px;
+}
+
+header ul {
+    margin-top: 0px;
+}
+
+.cta {
+    font-size: 1rem;
+    background-color: transparent;
+    border-color: var(--accent);
+    border-radius: .6rem;
+    padding: 1rem 1.5rem;
+}
+
+.cta a {
+    color: var(--main);
+    text-decoration: none;
+}
+
+main {
+    padding: 0 1rem;
+}
+
+h1 {
+    font-family: 'Allura', cursive;
+    color: var(--main);
+}
+
+footer {
+    border-top: 2px solid var(--main);
+    text-align: center;
+}
+
+footer h4, #modified {
+    display: inline;
+}
+
+/************************
+* small view navigation *
+************************/
+
+#menu {
+	font-size: 1.5rem;
+	border: 2px solid var(--accent);
+	padding: 3px 7px 6px;
+	background-color: transparent;
+ 	/*position: absolute;*/
+	margin-left: 85%;
+	top: 9.5rem;
+}
+
+#menu::before {
+	content: "☰";
+    color: var(--accent)
+}
+
+#menu.open::before {
+	content: "✕";
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+}
+
+.navigation li {
+	display: none;
+}
+
+.navigation li a {
+	display: block;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: var(--accent);
+}
+
+.navigation li a:hover {
+	color: var(--main);
+	background-color: var(--light);
+}
+
+.navigation li a.active {
+    color: var(--light);
+    background-color: var(--main);
+    font-weight: bold;
+    border-radius: .3rem;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) and accounted for here */
+.open li {
+	display: block;
+	width: 90%;
+}
+
+.open li a {
+	display: block;
+}
+
+/*****************
+* end navigation *
+*****************/
+
+.events {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.events img {
+    aspect-ratio: 5/6.6 auto;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/**************************************************************BREAK POINT********************************************************/
+
+@media (min-width: 600px) {
+
+    #menu {
+        display: none; /* hide hamburger button */
+    }
+    
+    nav {
+        display: block;
+        width: 100%;
+        background-color: var(--accent);
+    }
+    
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: end;
+        padding-right: 1rem;
+    }
+    
+    .navigation li {
+        display: block;
+    }
+    
+    .navigation li a {
+        color: var(--light);
+    }
+    
+    /*****************
+    * end navigation *
+    *****************/
+
+    body {
+        max-width: 900px;
+    }
+
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    main h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .cta a {
+        padding: 10px 20px;
+    }
+
+    main h1 {
+
+    }
+
+    .events h2 {
+        
+    }
+
+    .events p {
+        
+    }
+
+    .events img {
+        
+    }
+
+}
+
+/**************************************************************BREAK POINT********************************************************/
+
+@media (min-width: 900px) {
+/************************
+* large view navigation *
+************************/
+
+    body {
+        max-width: 1200px;
+    }
+
+    main {
+        grid-template-columns: 2fr 1fr;
+        gap: 2rem;
+    }
+
+    .cta a {
+        padding: 10px 20px;
+    }
+
+    footer {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .footer {
+        grid-column: 2/3;
+        text-align: center;
+    }
+
+
+}
