@@ -1,0 +1,24 @@
+@media (min-width: 900px) {
+    
+        body {
+            max-width: 1200px;
+        }
+    
+        main {
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+        }
+    
+        .cta a {
+            padding: 10px 20px;
+        }
+    
+        footer {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    
+        .footer {
+            grid-column: 2/3;
+            text-align: center;
+        }
+    }

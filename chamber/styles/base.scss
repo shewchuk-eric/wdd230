@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+
+// COMBINE CSS FILES
+@import 'normalize';
+@import 'medium';
+@import 'larger';
+
+
+// set global variables
+
+    $main: #284b63;
+    $accent: #3c6e71;
+    $text: #353535;
+    $light: #d9d9d9;
+    $border: 3px solid $accent;
+    $center: 0 auto;
+
+// set global styles
+
+html {
+    background-color: $text;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    color: $text;
+}
+
+body {
+    background-color: white;
+    min-width: 450px;
+    margin: $center;
+    border: $border;
+}
+
+.hero {
+    max-width: 100%;
+    margin: 0px;
+}
+
+header ul {
+    margin-top: 0px;
+}
+
+.cta {
+    font-size: 1rem;
+    background-color: transparent;
+    border-color: $accent;
+    border-radius: .6rem;
+    padding: 1rem 1.5rem;
+}
+
+.cta a {
+    color: $main;
+    text-decoration: none;
+}
+
+main {
+    padding: 0 1rem;
+}
+
+h1 {
+    font-family: 'Allura', cursive;
+    color: $main;
+}
+
+footer {
+    border-top: 2px solid $main;
+    text-align: center;
+}
+
+footer h4, #modified {
+    display: inline;
+}
+
+
+// small view navigation 
+
+#menu {
+	font-size: 1.5rem;
+	border: $border;
+	padding: 3px 7px 6px;
+	background-color: transparent;
+	margin-left: 85%;
+	top: 9.5rem;
+}
+
+#menu::before {
+	content: "☰";
+    color: $accent;
+}
+
+#menu.open::before {
+	content: "✕";
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+}
+
+.navigation li {
+	display: none;
+}
+
+.navigation li a {
+	display: block;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: $accent;
+}
+
+.navigation li a:hover {
+	color: $main;
+	background-color: $light;
+}
+
+.navigation li a.active {
+    color: $light;
+    background-color: $main;
+    font-weight: bold;
+    border-radius: .3rem;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) and accounted for here */
+.open li {
+	display: block;
+	width: 90%;
+}
+
+.open li a {
+	display: block;
+}
+
+// end navigation
+
+.events {
+    max-width: 90%;
+    margin: $center;
+}
+
+.events img {
+    aspect-ratio: 5/6.6 auto;
+    width: 100%;
+    margin: $center;
+}
+
