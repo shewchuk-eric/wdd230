@@ -18,13 +18,13 @@
     }
     
     .navigation {
-        display: flex;
+        //display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: end;
     }
     
-    .navigation ul li {
+    .navigation li {
         display: block;
         color: $light;
     } 
@@ -38,7 +38,6 @@
         color: $light;
         background-color: $accent;
         font-weight: bold;
-        //border-radius: .3rem;
     }
 
 // end navigation
@@ -56,6 +55,10 @@
     main h1 {
         font-size: 3rem;
         text-align: center;
+    }
+
+    .cta {
+        height: fit-content;
     }
 
     .cta a {

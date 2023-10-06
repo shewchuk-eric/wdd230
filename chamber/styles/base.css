@@ -182,12 +182,11 @@ template {
     background-color: #284b63;
   }
   .navigation {
-    display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: end;
   }
-  .navigation ul li {
+  .navigation li {
     display: block;
     color: #d9d9d9;
   }
@@ -211,6 +210,9 @@ template {
   main h1 {
     font-size: 3rem;
     text-align: center;
+  }
+  .cta {
+    height: fit-content;
   }
   .cta a {
     padding: 1rem 2rem;
