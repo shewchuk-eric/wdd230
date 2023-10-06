@@ -13,8 +13,8 @@
     
     nav {
         display: block;
-        width: 100%;
-        background-color: $accent;
+        max-width: 100%;
+        background-color: $main;       
     }
     
     .navigation {
@@ -22,17 +22,24 @@
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: end;
-        padding-right: 1rem;
     }
     
-    .navigation li {
+    .navigation ul li {
         display: block;
-    }
-    
-    .navigation li a {
         color: $light;
+    } 
+    
+    .navigation li a:hover {
+        color: $light;
+        background-color: $main;
     }
     
+    .navigation li a.active {
+        color: $light;
+        background-color: $accent;
+        font-weight: bold;
+        //border-radius: .3rem;
+    }
 
 // end navigation
 
@@ -52,22 +59,11 @@
     }
 
     .cta a {
-        padding: 10px 20px;
+        padding: 1rem 2rem;
     }
 
-    main h1 {
-
+    h1, h2, h3 {
+        font-size: 3rem;
     }
 
-    .events h2 {
-        
-    }
-
-    .events p {
-        
-    }
-
-    .events img {
-        
-    }
 }
