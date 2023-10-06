@@ -6,8 +6,8 @@
 
 // COMBINE CSS FILES
 @use 'normalize';
-@use 'medium';
-@use 'larger';
+//@import 'medium';
+//@import 'larger';
 
 @import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
 
@@ -167,3 +167,5 @@ footer h4, #modified {
 
 // end navigation
 
+@import 'medium';
+@import 'larger';
