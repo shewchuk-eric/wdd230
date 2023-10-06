@@ -329,10 +329,12 @@ footer h4, #modified {
   }
   .navigation li {
     display: block;
+  }
+  .navigation li a {
     color: #d9d9d9;
   }
   .navigation li a:hover {
-    color: #d9d9d9;
+    color: #3c6e71;
     background-color: #284b63;
   }
   .navigation li a.active {

@@ -26,11 +26,14 @@
     
     .navigation li {
         display: block;
-        color: $light;
     } 
+
+    .navigation li a {
+        color: $light;
+    }
     
     .navigation li a:hover {
-        color: $light;
+        color: $accent;
         background-color: $main;
     }
     
