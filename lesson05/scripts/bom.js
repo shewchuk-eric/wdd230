@@ -10,17 +10,16 @@ submit.addEventListener('click', function () { // watches for click on button
     }
     const listItem = document.createElement('li');
     const killButton = document.createElement('button');
-    listItem.textContent = input.value;                 //innerHTML = `${input.value}  ${killButton}`;
-    killButton.textContent = '❌';                  //chapList.appendChild(listItem);
+    listItem.textContent = input.value;
+    killButton.textContent = '❌';
     listItem.append(killButton);
     chapList.append(listItem);
 
     killButton.addEventListener('click', function () {
-        chapList.removeChild(li);
+        const parent = killButton.parentNode;
+        listItem.remove();
         input.focus();
         input.value = '';
     });
 });
-
-                                                          //const deleteB = document.querySelector('.remove');
 
