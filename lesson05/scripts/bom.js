@@ -19,7 +19,7 @@ submit.addEventListener('click', function () { // watches for click on button
         const parent = killButton.parentNode;
         listItem.remove();
         input.focus();
-        input.value = '';
     });
+    input.value = '';
 });
 
