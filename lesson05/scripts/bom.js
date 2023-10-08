@@ -1,4 +1,4 @@
-const input = document.querySelector('input'); // get value of input field
+const input = document.querySelector('input');
 const submit = document.querySelector('button');
 const chapList = document.querySelector('#list');
 
@@ -8,18 +8,17 @@ submit.addEventListener('click', function () { // watches for click on button
         submit.focus();
         exit;
     }
-    const listItem = document.createElement('li');
+    const listItem = document.createElement('li'); // list item and button need to be created here so new ones are made
     const killButton = document.createElement('button');
-    listItem.textContent = input.value;
+    listItem.textContent = input.value; // get text from input field
     killButton.textContent = '❌';
-    listItem.append(killButton);
-    chapList.append(listItem);
+    listItem.append(killButton); // add button to <li>
+    chapList.append(listItem); // add <li> to <ul>
 
     killButton.addEventListener('click', function () {
-        const parent = killButton.parentNode;
-        listItem.remove();
-        input.focus();
+        listItem.remove(); // kill button clicked - delete <li>
+        input.focus(); // place cursor into input field
     });
-    input.value = '';
+    input.value = ''; // set input to 'blank'
 });
 
