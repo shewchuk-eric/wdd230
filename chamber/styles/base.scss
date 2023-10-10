@@ -171,5 +171,12 @@ footer h4, #modified {
 @import 'larger';
 
 @media (prefers-color-scheme: dark) {
-    
+    html {
+        background-color: black;
+        color: $light;
+    }
+
+    body {
+        background-color: $text; 
+    }
 }
