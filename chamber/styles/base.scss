@@ -2,7 +2,7 @@
 * Princeville Chamber of Commerce project styles - Author: Eric Shewchuk *
 *************************************************************************/
 
-//sass --watch chamber/styles/base.scss:chamber/styles/base.css
+// sass --watch chamber/styles/base.scss:chamber/styles/base.css
 
 // COMBINE CSS FILES
 @use 'normalize';
@@ -19,6 +19,11 @@
     $light: #d9d9d9;
     $border: 3px solid $accent;
     $center: 0 auto;
+
+// create mixins
+@mixin shadow {
+    box-shadow: .4em .4em .7em $text;
+}
 
 // set global styles
 
@@ -45,8 +50,17 @@ header ul {
     margin-top: 0px;
 }
 
+// #headline {
+//     position: relative;
+// }
+
 main {
     padding: 0 1rem;
+}
+
+main img {
+    border: $border;
+    @include shadow;
 }
 
 .cta {
