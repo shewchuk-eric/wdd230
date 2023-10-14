@@ -50,10 +50,6 @@ header ul {
     margin-top: 0px;
 }
 
-// #headline {
-//     position: relative;
-// }
-
 main {
     padding: 0 1rem;
 }
@@ -61,6 +57,12 @@ main {
 main img {
     border: $border;
     @include shadow;
+}
+
+#mode {
+    display: block;
+    background-color: $light;
+    color: $text;
 }
 
 .cta {

@@ -55,13 +55,27 @@
         grid-template-columns: 1fr 1fr;
     }
 
+    #headline {
+        position: absolute;
+        top: 12rem;
+        left: 5rem;
+        text-shadow: 0 0 0.1em white;
+        font-weight: bold;
+    }
+
+    #mode {
+        grid-area: 1/1/2/2;
+        justify-self: left;
+        background-color: $light;
+        color: $text;
+    }
+
     main h1 {
         font-size: 3rem;
-        text-align: center;
     }
 
     .cta {
-        height: fit-content;
+        // height: fit-content;
     }
 
     .cta a {
