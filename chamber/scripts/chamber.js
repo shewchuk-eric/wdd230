@@ -25,7 +25,7 @@ const modeButton = document.querySelector("#mode");
 const body = document.querySelector("body");
 const html = document.querySelector("html");
 const h2 = document.querySelectorAll("h2");
-// const a = document.querySelectorAll("section a");
+const spotlight = document.querySelectorAll(".spotlight a");
 const a = document.querySelectorAll("a");
 const cta = document.querySelector(".cta a");
 const active = document.querySelector(".active");
@@ -50,7 +50,10 @@ modeButton.addEventListener("click", () => {
 			h2[i].style.color = "#284b63";
 		}
 		for (let i=0; i<a.length; i++) {
-			a[i].style.color = "#284b63";
+			a[i].style.color = "#d9d9d9";
+		}
+		for (let i=0; i<spotlight.length; i++) {
+			spotlight[i].style.color = "#3c6e71";
 		}
 		cta.style.color = "#d9d9d9";
 		active.style.color = "#d9d9d9";

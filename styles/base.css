@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 
 /*  Author: Eric Shewchuk | Copyright 2023  */
@@ -108,6 +107,24 @@ header h1 {
 * end navigation *
 *****************/
 
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+#overlay {
+    position: absolute;
+    top: 2em;
+    left: 1em;
+    background-color: rgba(255,255,255,.7);
+    padding: 1em;
+    color: rgb(179, 107, 59);
+}
+
 a {
     text-decoration: none;
     color: burlywood;
@@ -118,7 +135,7 @@ a:hover {
     color: rgb(151, 96, 24);
 }
 
-main {
+#content {
     display: grid;
     grid-template-columns: 1fr;
 }

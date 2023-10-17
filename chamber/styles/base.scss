@@ -24,6 +24,7 @@
 }
 
 // set global styles
+/******************** end of normalize ********************/
 
 html {
     background-color: $text;
@@ -41,7 +42,19 @@ body {
 
 .hero {
     max-width: 100%;
+    height: auto;
     margin: 0px;
+}
+
+header {
+    position: relative;
+}
+
+#headline {
+    position: absolute;
+    padding-top: 10%;
+    left: 1em;
+    text-shadow: 2px 2px 3px $light;
 }
 
 header ul {
@@ -63,6 +76,11 @@ main img {
     color: $text;
 }
 
+
+a {
+    text-decoration: none;
+}
+
 .cta {
     display: block;
     font-size: 1rem;
@@ -75,7 +93,6 @@ main img {
 
 .cta a {
     color: $light;
-    text-decoration: none;
 }
 
 h1, h2, h3 {
@@ -108,6 +125,10 @@ h1, h2, h3 {
     aspect-ratio: 5/6.6 auto;
     width: 100%;
     margin: $center;
+}
+
+.spotlight a {
+    color: $accent;
 }
 
 footer {
@@ -153,7 +174,6 @@ footer h4, #modified {
 	display: block;
 	padding: 1rem;
 	text-align: center;
-	text-decoration: none;
 	color: $accent;
 }
 
@@ -183,14 +203,3 @@ footer h4, #modified {
 
 @import 'medium';
 @import 'larger';
-
-@media (prefers-color-scheme: dark) {
-    html {
-        background-color: black;
-        color: $light;
-    }
-
-    body {
-        background-color: $text; 
-    }
-}

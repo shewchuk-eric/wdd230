@@ -55,6 +55,10 @@
         grid-template-columns: 1fr 1fr;
     }
 
+    #headline {
+        padding-top: 19%;
+    }
+
     #mode {
         grid-area: 1/1/2/2;
         justify-self: left;
