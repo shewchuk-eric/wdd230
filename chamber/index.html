@@ -21,7 +21,16 @@
 <body>
     <header id="home">
         <h1 id="headline">Princeville Chamber of Commerce</h1>
-        <img src="images/hero-nene.webp" alt="image of Hawaiian Nene Goose" class="hero">
+        <!-- <picture>
+            <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+            <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
+            <img src="images/hero-fullsize.webp" alt="image of Hawaiian Nene Geese" width="1200" height="450" class="hero">
+        </picture> -->
+        <picture>
+            <source srcset="images/temp-hero-small.webp" media="(max-width: 500px)">
+            <source srcset="images/temp-hero-medium.webp" media="(max-width: 1000px)">
+            <img src="images/temp-hero-fullsize.webp" alt="image of people at work in an office" width="1200" height="450" class="hero">
+        </picture>
         <nav>
             <button id="menu"></button>
             <ul class="navigation">
@@ -43,7 +52,12 @@
 
         <section class="weather">
             <h2>Current Weather</h2>
-            <article class="placeholder"><img src="images/small-placeholder.jpg" alt="small placeholder image"></article>
+            <article id="sunshine">
+                <img src="images/sun-icon.png" alt="small sunshine icon">
+                <p>Current Temp: <span id="temp">84</span>°</p>
+                <p>Wind Speed: <span id="speed">14 </span>mph</p>
+                <p>Feels Like: <span id="chill"></span>°</p>
+            </article>
         </section>
 
         <section class="spotlight">
@@ -61,6 +75,7 @@
             </section>
         </footer>
         <script src="scripts/chamber.js"></script>
+        <script src="scripts/windchill.js"></script>
 </body>
 
 </html>
