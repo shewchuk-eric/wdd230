@@ -1,0 +1,27 @@
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+thead {
+    background: black;
+    color: white;
+    font-size: 1rem;
+}
+caption {
+    padding: 8px;
+    caption-side: bottom;
+    font-size: .85rem;
+}
+th, td {
+	padding: 7px 15px;
+	border: 1px solid black;
+}
+.lite {
+    background: rgb(53, 52, 52);
+}
+td {
+	text-align: center;
+}
+tbody tr:nth-child(even) {
+	background-color: rgb(212, 212, 212);
+}
