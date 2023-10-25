@@ -28,7 +28,16 @@ hamButton.addEventListener('click', () => {
 * Local Storage Management Functions *
 *************************************/
 
-// check for existence of local values
+const visitors = document.querySelector('#visits'); // access span for visits count
 
+// check for existence of local storage values
+let visitsCounter = Number(window.localStorage.getItem('myVisitorCount')) || 0; // gets value of 'myVisitorCount' and sets it to zero if it doesn't exist already
+if (visitsCounter !==0) {
+	visitors.textContent = visitsCounter; // visitor has been to page before so show the count
+} else {
+	visitors.textContent = 'Welcome to The Clever Primate'; // first-time visitor so show welcome message
+}
+visitsCounter ++; // add one to counter
 
-// convert data into JSON
+// set visitor count value to local storage
+localStorage.setItem('myVisitorCount', visitsCounter);

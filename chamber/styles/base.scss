@@ -52,7 +52,8 @@ header {
 
 #headline {
     position: absolute;
-    padding-top: 10%;
+    padding-top: 20%;
+    font-size: 2rem;
     left: 1em;
     text-shadow: 2px 2px 3px $light;
 }
@@ -62,12 +63,21 @@ header ul {
 }
 
 main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
     padding: 0 1rem;
 }
 
 main img {
     border: $border;
     @include shadow;
+    max-width: 100%;
+}
+
+.show {
+    max-width: 100%;
+    height: auto;
 }
 
 #mode {
@@ -76,13 +86,14 @@ main img {
     color: $text;
 }
 
-
 a {
     text-decoration: none;
 }
 
 .cta {
     display: block;
+    max-width: 80%;
+    text-align: center;
     font-size: 1rem;
     background-color: $main;
     border-color: $accent;
@@ -102,58 +113,6 @@ h1, h2, h3 {
     margin-bottom: .5rem;
 }
 
-.spotlight, .weather {
-    max-width: 85%;
-    margin: .5rem auto;
-}
-
-.weather {
-    padding: 1rem;
-}
-
-#sunshine {
-    @include shadow();
-    border: $border;
-    display: flex;
-    padding: 0 1rem;
-    display: block;
-    font-size: 1.8rem;
-}
-
-#sunshine img {
-    border: none;
-    box-shadow: none;
-    width: 40%;
-}
-
-.member {
-    display: flex;
-    flex-direction: column;
-}
-
-.member a {
-    text-decoration: underline;
-}
-
-.member p::first-line {
-    font-weight: bold;
-}
-
-.events {
-    max-width: 90%;
-    margin: $center;
-}
-
-.events img, .weather img { //.weather will change when functionality is added
-    aspect-ratio: 5/6.6 auto;
-    width: 100%;
-    margin: $center;
-}
-
-.spotlight a {
-    color: $accent;
-}
-
 footer {
     border-top: 2px solid $main;
     text-align: center;
@@ -163,7 +122,7 @@ footer h4, #modified {
     display: inline;
 }
 
-// small view navigation 
+/*************************************** NAVIGATION *******************************************/ 
 
 #menu {
 	font-size: 1.5rem;
@@ -222,7 +181,83 @@ footer h4, #modified {
 	display: block;
 }
 
-// end navigation
+/**************************************** HOME PAGE SPECIFIC STYLES *********************************************/
+.spotlight, .weather {
+    max-width: 85%;
+    margin: .5rem auto;
+}
+
+.weather {
+    padding: 1rem;
+}
+
+#sunshine {
+    @include shadow();
+    border: $border;
+    display: flex;
+    padding: 0 1rem;
+    display: block;
+    font-size: 1.8rem;
+}
+
+#sunshine img {
+    border: none;
+    box-shadow: none;
+    width: 40%;
+}
+
+.member {
+    display: flex;
+    flex-direction: column;
+}
+
+.member a {
+    text-decoration: underline;
+}
+
+.member p::first-line {
+    font-weight: bold;
+}
+
+iframe {
+    width: 100%;
+    height: auto;
+}
+
+.events {
+    max-width: 100%;
+    margin: $center;
+}
+
+.events img, .weather img { //.weather will change when functionality is added
+    aspect-ratio: 5/6.6 auto;
+    width: 100%;
+    margin: $center;
+}
+
+.spotlight a {
+    color: $accent;
+}
+
+/**************************************** DISCOVER PAGE SPECIFIC STYLES *********************************************/
+#discover-sidebar article {
+    border: $border;
+    @include shadow;
+    margin-bottom: 15px;
+    & h3 {
+        padding-top: 0;
+        margin: 0 0 0 7px;
+    }
+}
+.stats {
+    padding: 8px;
+}
+#discover-main img {
+    transition: 1s;
+}
+#discover-main img:hover {
+    transform: scale(1.01);
+}
 
 @import 'medium';
 @import 'larger';

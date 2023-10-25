@@ -199,7 +199,8 @@ header {
 
 #headline {
   position: absolute;
-  padding-top: 10%;
+  padding-top: 20%;
+  font-size: 2rem;
   left: 1em;
   text-shadow: 2px 2px 3px #d9d9d9;
 }
@@ -209,12 +210,21 @@ header ul {
 }
 
 main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
   padding: 0 1rem;
 }
 
 main img {
   border: 3px solid #3c6e71;
   box-shadow: 0.4em 0.4em 0.7em #353535;
+  max-width: 100%;
+}
+
+.show {
+  max-width: 100%;
+  height: auto;
 }
 
 #mode {
@@ -229,6 +239,8 @@ a {
 
 .cta {
   display: block;
+  max-width: 80%;
+  text-align: center;
   font-size: 1rem;
   background-color: #284b63;
   border-color: #3c6e71;
@@ -248,58 +260,6 @@ h1, h2, h3 {
   margin-bottom: 0.5rem;
 }
 
-.spotlight, .weather {
-  max-width: 85%;
-  margin: 0.5rem auto;
-}
-
-.weather {
-  padding: 1rem;
-}
-
-#sunshine {
-  box-shadow: 0.4em 0.4em 0.7em #353535;
-  border: 3px solid #3c6e71;
-  display: flex;
-  padding: 0 1rem;
-  display: block;
-  font-size: 1.8rem;
-}
-
-#sunshine img {
-  border: none;
-  box-shadow: none;
-  width: 40%;
-}
-
-.member {
-  display: flex;
-  flex-direction: column;
-}
-
-.member a {
-  text-decoration: underline;
-}
-
-.member p::first-line {
-  font-weight: bold;
-}
-
-.events {
-  max-width: 90%;
-  margin: 0 auto;
-}
-
-.events img, .weather img {
-  aspect-ratio: 5/6.6 auto;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.spotlight a {
-  color: #3c6e71;
-}
-
 footer {
   border-top: 2px solid #284b63;
   text-align: center;
@@ -309,6 +269,7 @@ footer h4, #modified {
   display: inline;
 }
 
+/*************************************** NAVIGATION *******************************************/
 #menu {
   font-size: 1.5rem;
   border: 3px solid #3c6e71;
@@ -366,6 +327,87 @@ footer h4, #modified {
   display: block;
 }
 
+/**************************************** HOME PAGE SPECIFIC STYLES *********************************************/
+.spotlight, .weather {
+  max-width: 85%;
+  margin: 0.5rem auto;
+}
+
+.weather {
+  padding: 1rem;
+}
+
+#sunshine {
+  box-shadow: 0.4em 0.4em 0.7em #353535;
+  border: 3px solid #3c6e71;
+  display: flex;
+  padding: 0 1rem;
+  display: block;
+  font-size: 1.8rem;
+}
+
+#sunshine img {
+  border: none;
+  box-shadow: none;
+  width: 40%;
+}
+
+.member {
+  display: flex;
+  flex-direction: column;
+}
+
+.member a {
+  text-decoration: underline;
+}
+
+.member p::first-line {
+  font-weight: bold;
+}
+
+iframe {
+  width: 100%;
+  height: auto;
+}
+
+.events {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.events img, .weather img {
+  aspect-ratio: 5/6.6 auto;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.spotlight a {
+  color: #3c6e71;
+}
+
+/**************************************** DISCOVER PAGE SPECIFIC STYLES *********************************************/
+#discover-sidebar article {
+  border: 3px solid #3c6e71;
+  box-shadow: 0.4em 0.4em 0.7em #353535;
+  margin-bottom: 15px;
+}
+#discover-sidebar article h3 {
+  padding-top: 0;
+  margin: 0 0 0 7px;
+}
+
+.stats {
+  padding: 8px;
+}
+
+#discover-main img {
+  transition: 1s;
+}
+
+#discover-main img:hover {
+  transform: scale(1.01);
+}
+
 @media (min-width: 600px) {
   #menu {
     display: none; /* hide hamburger button */
@@ -399,14 +441,15 @@ footer h4, #modified {
     max-width: 900px;
   }
   main {
-    display: flex;
-    flex-wrap: wrap;
-    grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr 35%;
   }
   #headline {
     padding-top: 19%;
+    font-size: 2.5rem;
   }
   #mode {
+    display: inline;
     grid-area: 1/1/2/2;
     justify-self: left;
     background-color: #d9d9d9;
@@ -415,11 +458,35 @@ footer h4, #modified {
   main h1 {
     font-size: 3rem;
   }
+  .cta {
+    max-width: fit-content;
+    display: inline-block;
+  }
   .cta a {
     padding: 1rem 2rem;
   }
   h1, h2, h3 {
     font-size: 3rem;
+  }
+  /**************************************** DISCOVER PAGE SPECIFIC STYLES > 600px *********************************************/
+  #discover-sidebar {
+    margin-left: 15px;
+  }
+  figcaption {
+    margin-bottom: 1rem;
+  }
+}
+/**************************************** HOME PAGE SPECIFIC STYLES *********************************************/
+@media (min-width: 700px) {
+  .spotlight {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 100%;
+  }
+  #spot-head {
+    grid-column: 1/-1;
   }
 }
 @media (min-width: 900px) {
@@ -431,9 +498,19 @@ footer h4, #modified {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
   }
+  #headline {
+    padding-top: 19%;
+    font-size: 3rem;
+  }
   #cta {
     grid-area: 1/2/2/3;
     justify-self: center;
+  }
+  #discover-main {
+    grid-area: 2/1/3/3;
+  }
+  #discover-sidebar {
+    grid-area: 2/3/3/4;
   }
   .events {
     grid-area: 2/1/3/3;

@@ -19,8 +19,13 @@
 </head>
 
 <body>
-    <header>
-        <img src="images/hero-placeholder.jpg" alt="placeholder image" class="hero">
+    <header id="home">
+        <h1 id="headline">Princeville Chamber of Commerce</h1>
+        <picture>
+            <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+            <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
+            <img src="images/hero-fullsize.webp" alt="image of Hawaiian Nene Geese" width="1200" height="450" class="hero">
+        </picture>
         <nav>
             <button id="menu"></button>
             <ul class="navigation">
@@ -31,10 +36,98 @@
             </ul>
         </nav>
     </header>
+
     <main>
-        <button class="cta"><a href="join.html">Join Us</a></button>
-        <h1>Princeville Chamber of Commerce</h1>
-        <section class="mem-detailed"></section>
+        <div class="cta" id="mode">Use Dark Mode</div>
+        <div class="cta" id="cta"><a href="join.html">Join Us</a></div>
+            <section id="discover-main">
+                <picture>
+                    <source srcset="images/shopping-small.webp" media="(max-width: 500px)">
+                    <source srcset="images/shopping-med.webp" media="(max-width: 650px)">
+                    <img src="images/shopping-full.webp" alt="image of shopping center entrance sign" width="800" height="533" class="show" loading="lazy">
+                    <figcaption>Walk To Shopping</figcaption>
+                </picture>
+                <picture>
+                    <source srcset="images/pali-small.webp" media="(max-width: 500px)">
+                    <source srcset="images/pali-med.webp" media="(max-width: 650px)">
+                    <img src="images/pali-full.webp" alt="image of restaurant sign" width="800" height="533" class="show" loading="lazy">
+                    <figcaption>Great Pizza Nearby</figcaption>
+                </picture>
+                <picture>
+                    <source srcset="images/path-small.webp" media="(max-width: 500px)">
+                    <source srcset="images/path-med.webp" media="(max-width: 650px)">
+                    <img src="images/path-full.webp" alt="image of man with a dog on walking path" width="800" height="533" class="show" loading="lazy">
+                    <figcaption>Walk To The Dog Park</figcaption>
+                </picture>
+                <picture>
+                    <source srcset="images/hardware-small.webp" media="(max-width: 500px)">
+                    <source srcset="images/hardware-med.webp" media="(max-width: 650px)">
+                    <img src="images/hardware-full.webp" alt="image of hardware store entrance" width="800" height="533" class="show" loading="lazy">
+                    <figcaption>Neighborhood Hardware Shop</figcaption>
+                </picture>
+                <picture>
+                    <source srcset="images/play-small.webp" media="(max-width: 500px)">
+                    <source srcset="images/play-med.webp" media="(max-width: 650px)">
+                    <img src="images/play-full.webp" alt="image of childrens playground" width="800" height="533" class="show" loading="lazy">
+                    <figcaption>Kids Can Play</figcaption>
+                </picture>
+                <picture>
+                    <source srcset="images/foodland-small.webp" media="(max-width: 500px)">
+                    <source srcset="images/foodland-med.webp" media="(max-width: 650px)">
+                    <img src="images/foodland-full.webp" alt="image of grocery store entrance" width="800" height="533" class="show" loading="lazy">
+                    <figcaption>Walk To The Grocery Store</figcaption>
+                </picture>
+                <picture>
+                    <source srcset="images/entrance-small.webp" media="(max-width: 500px)">
+                    <source srcset="images/entrance-med.webp" media="(max-width: 650px)">
+                    <img src="images/entrance-full.webp" alt="image of fountain at community entrance" width="800" height="533" class="show" loading="lazy">
+                    <figcaption>Grand Entrance Fountain</figcaption>
+                </picture>
+                <picture>
+                    <source srcset="images/fitness-small.webp" media="(max-width: 500px)">
+                    <source srcset="images/fitness-med.webp" media="(max-width: 650px)">
+                    <img src="images/fitness-full.webp" alt="image of fitness station at a park" width="800" height="533" class="show" loading="lazy">
+                    <figcaption>Multiple Fitness Stations</figcaption>
+                </picture>
+            </section>
+
+            <section id="discover-sidebar">
+                <article class="stats">
+                    <h3>Welcome!</h3>
+                    <span id="welcome">Let us know if you have any questions.</span>
+                    <p>Princeville is a close-knit community of active and fun-loving residents.  Stop by in-person and have something to eat at one of the many restaurants, browse for unique art at one of the galleries, or spend a day at one of our world-class resorts.  We look forward to seeing you!</p>
+                </article>
+                <article class="stats">
+                    <h3>Demographics Data</h3>
+                    <ul>
+                        <li>Basics -
+                            <ul>
+                                <li>Population: 1,969</li>
+                                <li>Median Income: $70,625</li>
+                                <li>Median Age: 50</li>
+                                <li>Median Property Value: $888,300</li>
+                            </ul>
+                        <li>Citizenship/Nationality - </li>
+                            <ul>
+                                <li>US Citizenship: 93.1%</li>
+                                <li>White: 68.1%</li>
+                                <li>Asian: 3.86%</li>
+                                <li>Hispanic: 10.5%</li>
+                            </ul>
+                        <li>Historic Voting Preference - </li>
+                            <ul>
+                                <li>Democrat: 63%</li>
+                                <li>Republican: 34%</li>
+                                <li>Other: 3%</li>
+                            </ul>
+                    </ul>
+                </article>
+                <article class="stats">
+                    <h3>Calendar</h3>
+                    <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Pacific%2FHonolulu&title=Princeville%20Chamber%20of%20Commerce&src=MjQxYmI1ZmM0OWI1ZGQ1MTE3MThhYjdlMzkzNTY1NDdmNzRlZjlkYTFmMjQ3NmNkMDZiMThjY2I5ZDNhODJhZkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23D50000&color=%230B8043" style="border:solid 1px #777" max-width="800" height="auto" frameborder="0" scrolling="yes"></iframe>
+                </article>
+            </section>
+        </div>
     </main>
     <footer>
         <section class="footer">
@@ -43,6 +136,7 @@
             </section>
         </footer>
         <script src="scripts/chamber.js"></script>
+        <script src="scripts/welcomeMessage.js"></script>
 </body>
 
 </html>

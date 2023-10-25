@@ -50,16 +50,17 @@
     }
 
     main {
-        display: flex;
-        flex-wrap: wrap;
-        grid-template-columns: 1fr 1fr;
+        display: grid;
+        grid-template-columns: 1fr 35%;
     }
 
     #headline {
         padding-top: 19%;
+        font-size: 2.5rem;
     }
 
     #mode {
+        display: inline;
         grid-area: 1/1/2/2;
         justify-self: left;
         background-color: $light;
@@ -70,6 +71,11 @@
         font-size: 3rem;
     }
 
+    .cta {
+        max-width: fit-content;
+        display: inline-block;
+    }
+
     .cta a {
         padding: 1rem 2rem;
     }
@@ -78,4 +84,30 @@
         font-size: 3rem;
     }
 
+    /**************************************** DISCOVER PAGE SPECIFIC STYLES > 600px *********************************************/
+    #discover-sidebar {
+        margin-left: 15px;
+    }
+
+    figcaption {
+        margin-bottom: 1rem;
+    }
 }
+
+
+
+
+/**************************************** HOME PAGE SPECIFIC STYLES *********************************************/
+@media (min-width: 700px) {
+    .spotlight {
+        grid-column: 1 / -1;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        max-width: 100%;
+    }
+    #spot-head {
+        grid-column: 1 / -1;
+    }
+}
+

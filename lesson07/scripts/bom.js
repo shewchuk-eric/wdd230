@@ -1,5 +1,7 @@
 // ******************* CODE TO OPERATE THE BASE PROGRAM ********************
 
+// localStorage.clear(); //--> empties local storage = uncomment to clear storage during testing
+
 const input = document.querySelector('input');
 const submit = document.querySelector('button');
 const chapList = document.querySelector('#list');
@@ -11,27 +13,29 @@ submit.addEventListener('click', () => { // watches for click on button
         submit.focus();
         exit;
     }
-    displayList(input.value); // line not blank, process input
-    chaptersArray.push(input.value); // put the current item into array
+    let newAddition = displayList(input.value); // line not blank, process input
+    chaptersArray.push(newAddition); // put the current item into array
     setChapterList(); // send value to function that builds the line into the window along with delete button
     input.value = ''; // clear input field
     input.focus(); // send cursor back to input field
 });
 
-function displayList(userValue) {
-    const listItem = document.createElement('li'); // list item and button need to be created here so new ones are made
-    const killButton = document.createElement('button');
-    listItem.textContent = userValue; // get text from input field
+function displayList(newAddition) {
+    let listItem = document.createElement('li'); // list item and button need to be created here so new ones are made
+    let killButton = document.createElement('button');
+    listItem.textContent = newAddition; // get text from input field
     killButton.textContent = '❌';
+    killButton.classList.add('delete');
     listItem.append(killButton); // add delete button to <li>
     chapList.append(listItem); // add <li> to <ul>
 
     killButton.addEventListener('click', function () {
-        listItem.remove(); // kill button clicked - delete <li>
-        deleteChapter(listItem);
+        listItem.remove(); // delete <li> from screen
+        deleteChapter(listItem.textContent); // delete <li></li> from chaptersArray >> need textContent because that's what's inside array (no 'X') so full listItem doesn't match filter
         input.focus(); // place cursor into input field
     });
     input.value = ''; // set input to 'blank'
+    return newAddition;
 }
 
 
@@ -47,7 +51,7 @@ function getChapterList() {
 
 function deleteChapter(chapter) {
     chapter=chapter.slice(0, chapter.length - 1);
-    chaptersArray = chaptersArray.filter(item => item !== chapter);
+    chaptersArray = chaptersArray.filter(item => item != chapter); // remove 'X' because when existing list is imported at doc.load it will add the 'X' >> prevents multiple 'X'
     setChapterList();
 }
 
