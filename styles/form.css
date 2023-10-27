@@ -1,0 +1,69 @@
+/******************** variables ********************/
+:root {
+    --tan: burlywood;
+    --darktan: rgb(179, 107, 59);
+    --alert: rgb(255, 132, 0);
+    --border: 1px solid var(--tan);
+}
+
+
+/******************** basic styles ********************/
+form {
+    width: 90%;
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+fieldset {
+    border: var(--border);
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+legend {
+    color: var(--tan);
+    margin: 0 1rem;
+    padding: 0 1rem;
+}
+
+label {
+    display: block;
+    color: var(--tan);
+    padding: 1rem 0 1rem 0;
+    font-size: 1rem;
+}
+
+input {
+    display: block;
+    font-size: 1rem;
+    border: var(--border);
+    border-radius: 4px;
+    padding: .75rem;
+    color: var(--darktan);
+    width: 90%;
+    max-width: 30rem;
+    background-color: rgba(88, 125, 100, 0.3);
+}
+
+input[type=submit] {
+    background-color: var(--darktan);
+    color: white;
+}
+
+
+/******************** animation styles ********************/
+#req, #noMatch {
+	display: none;
+	color: white;
+}
+
+#req.expanded, #noMatch.expanded {
+	animation: colorChange 1s ease-in-out 1;
+	display: block;
+	color: var(--alert);
+}
+
+@keyframes colorChange {
+	from {color: white;}
+	to {color: var(--alert);}
+}

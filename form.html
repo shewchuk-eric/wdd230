@@ -42,10 +42,12 @@
             <fieldset>
                 <legend>Applicant Information</legend>
                     <label>Username * <input type="text" id="username" name="username" required></label>
+                    <span id="req">Requires at least 8 characters including uppercase, lowercase and at least 1 number.</span>
                     <label>Password * <input type="password" id="pwd1" name="pwd1" required
                         pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-                        title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"></label>
-                        <label>Repeat Passsword * <input type="password" id="pwd2" name="pwd2" required></label>
+                        title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"></label>
+                    <label>Repeat Password * <input type="password" id="pwd2" name="pwd2" required></label>
+                    <span id="noMatch">Passwords do not match</span>
                     <label>Email * <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
                         title="Please enter a valid email address"></label>
                     <label>Page Rating <input type="range" id="rate" name="rate" min="1" step="1" max="10"></label>
@@ -60,6 +62,7 @@
         <h4>Last Modified: </h4><span id="modified"></span>
         </section>
     </footer>
-    <script src="scripts/getsmart.js"></script>   
+    <script src="scripts/getsmart.js"></script>
+    <script src="scripts/form.js"></script>   
 </body>
 </html>
