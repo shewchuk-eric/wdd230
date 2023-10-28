@@ -259,16 +259,7 @@ iframe {
     transform: scale(1.01);
 }
 
-/**************************************** JOIN PAGE FORM STYLES *********************************************/
-// set global variables
-
-$main: #284b63;
-$accent: #3c6e71;
-$text: #353535;
-$light: #d9d9d9;
-$border: 3px solid $accent;
-$center: 0 auto;
-
+/**************************************** JOIN PAGE FORM/TABLE STYLES *********************************************/
 form {
     width: 95%;
     max-width: 600px;
@@ -308,6 +299,36 @@ form div {
 #thanksMessage {
     text-align: center;
     padding: 3rem;
+}
+$main: #284b63;
+    $accent: #3c6e71;
+    $text: #353535;
+    $light: #d9d9d9;
+    $border: 3px solid $accent;
+    $center: 0 auto;
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-top: 2rem;
+}
+thead {
+    background: $main;
+    color: $light;
+    font-size: 1rem;
+}
+th, td {
+	padding: 7px 15px;
+	border: 1px solid $accent;
+}
+.lite {
+    background: $light;
+}
+td {
+	text-align: center;
+}
+tbody tr:nth-child(even) {
+	background-color: rgb(212, 212, 212);
 }
 
 @import 'medium';
