@@ -408,6 +408,55 @@ iframe {
   transform: scale(1.01);
 }
 
+/**************************************** JOIN PAGE FORM STYLES *********************************************/
+form {
+  width: 95%;
+  max-width: 600px;
+  box-shadow: 0.4em 0.4em 0.7em #353535;
+  margin: 2rem auto 3rem auto;
+  background-color: #d9d9d9;
+  padding: 0.7rem;
+}
+
+fieldset {
+  border: 3px solid #3c6e71;
+  color: #284b63;
+}
+
+legend {
+  margin: 0 0 0 1.5rem;
+  padding: 0 1rem;
+  color: #284b63;
+}
+
+label, input, textarea {
+  display: block;
+}
+
+input:not(radio), textarea {
+  width: 70%;
+  max-width: 400px;
+  font-size: 1rem;
+  border: 1px solid #284b63;
+  border-radius: 4px;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+input[type=radio] {
+  max-width: 20px;
+}
+
+form div {
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+#thanksMessage {
+  text-align: center;
+  padding: 3rem;
+}
+
 @media (min-width: 600px) {
   #menu {
     display: none; /* hide hamburger button */
@@ -476,6 +525,15 @@ iframe {
     margin-bottom: 1rem;
   }
 }
+/**************************************** JOIN PAGE FORM STYLES *********************************************/
+form {
+  grid-column: 1;
+}
+
+#thanksMessage {
+  grid-column: 1/-1;
+}
+
 /**************************************** HOME PAGE SPECIFIC STYLES *********************************************/
 @media (min-width: 700px) {
   .spotlight {
@@ -544,6 +602,10 @@ iframe {
   .footer {
     grid-column: 2/3;
     text-align: center;
+  }
+  /**************************************** JOIN PAGE FORM STYLES *********************************************/
+  form {
+    grid-column: 1/3;
   }
 }
 

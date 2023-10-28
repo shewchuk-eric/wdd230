@@ -19,8 +19,13 @@
 </head>
 
 <body>
-    <header>
-        <img src="images/hero-placeholder.jpg" alt="placeholder image" class="hero">
+    <header id="home">
+        <h1 id="headline">Princeville Chamber of Commerce</h1>
+        <picture>
+            <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+            <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
+            <img src="images/hero-fullsize.webp" alt="image of Hawaiian Nene Geese" width="1200" height="450" class="hero">
+        </picture>
         <nav>
             <button id="menu"></button>
             <ul class="navigation">
@@ -32,9 +37,38 @@
         </nav>
     </header>
     <main>
-        <button class="cta"><a href="#">Join Us</a></button>
-        <h1>Princeville Chamber of Commerce</h1>
-        <section class="join-us"></section>
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Applicant Information</legend>
+                    <label>First Name * <input type="text" id="fname" name="fname" required></label>
+                    <label>Last Name * <input type="text" id="lname" name="lname" required></label>
+                    <label>Job Title * <input type="text" id="position" name="position" pattern="^[a-zA-Z\-\ ]{7,}$" title="Must contain at least 7 letters, hyphens or spaces"></label>
+                    <label>Email * <input type="email" id="email" name="email" required placeholder="myemail@gmail.com"></label>
+                    <label>Mobile Phone * <input type="tel" id="phone" name="phone" required></label>
+                    <label>Business/Organization * <input type="text" id="busName" name="busName" required></label>
+                    <div>Membership Level</div>
+                    <label>Non-Profit<input type="radio" name="level" value="np"></label>
+                    <label>Bronze<input type="radio" name="level" value="bronze"></label>
+                    <label>Silver<input type="radio" name="level" value="silver"></label>
+                    <label>Gold<input type="radio" name="level" value="gold"></label>
+                    <label>Description of Business/Organization<textarea id="desc" name="desc"></textarea></label>
+                    <input type="hidden" id="time" name="time">
+                    <input type="submit" value="Apply For Membership" id="submit">
+            </fieldset>
+        </form>
+        <section id="levels">
+            <div class="card">
+                <h3>Non-Profit</h3>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </section>
     </main>
     <footer>
         <section class="footer">
@@ -43,6 +77,7 @@
             </section>
         </footer>
         <script src="scripts/chamber.js"></script>
+        <script src="scripts/form.js"></script>
 </body>
 
 </html>
