@@ -1,0 +1,62 @@
+{
+    "wardMembers" : [
+        {
+        "familyName" : "Gonsalves",
+        "movedIn" : "2001",
+        "familyNumber" : 4,
+        "visited" : false,
+        "individuals" : [
+            {
+                "name" : "Makaio",
+                "gender" : "M",
+                "birthdate" : "11/4/2003"
+            },
+            {
+                "name" : "Matthew",
+                "gender" : "M",
+                "birthdate" : "10/14/1974"
+            },
+            {
+                "name" : "Saylinn",
+                "gender" : "F",
+                "birthdate" : "7/7/1973"
+            },
+            {
+                "name" : "La'a",
+                "gender" : "M",
+                "birthdate" : "1/24/2000"
+            }
+            ]
+        },
+        {
+        "familyName" : "Peters",
+        "movedIn" : "2010",
+        "familyNumber" : 2,
+        "visited" : true,
+        "individuals" : [
+            {
+                "name" : "Leonard",
+                "gender" : "M",
+                "birthdate" : "8/17/1977"
+            },
+            {
+                "name" : "Jennifer",
+                "gender" : "F",
+                "birthdate" : "12/24/1980"
+            }
+        ]},
+        {
+        "familyName" : "Paleka",
+        "movedIn" : "1966",
+        "familyNumber" : 1,
+        "visited" : true,
+        "individuals" : [
+            {
+                "name" : "Joan",
+                "gender" : "F",
+                "birthdate" : "3/4/1955"
+            }
+            ]
+        }
+    ]
+}
