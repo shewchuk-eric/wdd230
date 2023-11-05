@@ -259,5 +259,77 @@ iframe {
     transform: scale(1.01);
 }
 
+/**************************************** JOIN PAGE FORM/TABLE STYLES *********************************************/
+form {
+    width: 95%;
+    max-width: 600px;
+    @include shadow;
+    margin: 2rem auto 3rem auto;
+    background-color: $light;
+    padding: .7rem;
+}
+fieldset {
+    border: $border;
+    color: $main;
+}
+legend {
+    margin: 0 0 0 1.5rem;
+    padding: 0 1rem;
+    color: $main;
+}
+label, input, textarea {
+    display: block;
+}
+input:not(radio), textarea {
+    width: 70%;
+    max-width: 400px;
+    font-size: 1rem;
+    border: 1px solid $main;
+    border-radius: 4px;
+    padding: .75rem;
+    margin-bottom: 1rem;
+}
+input[type=radio] {
+    max-width: 20px;
+}
+form div {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+#thanksMessage {
+    text-align: center;
+    padding: 3rem;
+}
+$main: #284b63;
+    $accent: #3c6e71;
+    $text: #353535;
+    $light: #d9d9d9;
+    $border: 3px solid $accent;
+    $center: 0 auto;
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-top: 2rem;
+}
+thead {
+    background: $main;
+    color: $light;
+    font-size: 1rem;
+}
+th, td {
+	padding: 7px 15px;
+	border: 1px solid $accent;
+}
+.lite {
+    background: $light;
+}
+td {
+	text-align: center;
+}
+tbody tr:nth-child(even) {
+	background-color: rgb(212, 212, 212);
+}
+
 @import 'medium';
 @import 'larger';
