@@ -41,3 +41,34 @@ visitsCounter ++; // add one to counter
 
 // set visitor count value to local storage
 localStorage.setItem('myVisitorCount', visitsCounter);
+
+
+/*************************************
+* Dynamic Links Using JSON Functions *
+*************************************/
+
+const baseurl = 'https://github.com/shewchuk-eric/wdd230';
+const linksurl = 'https://github.com/shewchuk-eric/wdd230/data/links.json'
+const linkMenu = document.querySelector('#courseLinks');
+
+async function getLinkData() {
+    const response = await fetch(linksurl);
+    const data = await response.json();
+    displayLinks(data);
+	// displayLinks(data.lessons); 'data' is the response container and 'lessons' is the name of the array found in the JSON file
+}
+
+const displayLinks = (weeks) => {
+    lessons.forEach((week) => {
+        let assignment = document.createElement('li');
+		assignment.textContent = `Week ${lesson.lesson}`;
+		lessons.links.forEach(() => {
+			let individual = document.createElement('a');
+			individual.setAttribute('href', `${url}`);
+			individual.textContent = `${title}`;
+		})
+        linkMenu.appendChild(assignment);
+    });
+}
+
+getLinkData();
