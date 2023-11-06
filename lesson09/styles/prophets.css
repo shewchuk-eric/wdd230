@@ -1,0 +1,21 @@
+h1, h2 {
+    color: rgb(32, 0, 128);
+}
+body {
+    text-align: center;
+}
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 15px;
+}
+section {
+    background-color: rgb(142, 127, 156);
+    padding: 10px;
+    border: 1px solid black;
+}
+section img {
+    max-width: 75%;
+    height: auto;
+    box-shadow: 5px 5px 5px rgb(57, 57, 57);
+}
