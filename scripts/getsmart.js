@@ -64,6 +64,7 @@ const displayLinks = (weeks) => {
 		week.links.forEach((link) => {
 			let individual = document.createElement('a');
 			individual.setAttribute('href', `${link.url}`);
+			individual.setAttribute('target', '_blank')
 			individual.textContent = `${link.title} `;
 			assignment.appendChild(individual);
 		})
