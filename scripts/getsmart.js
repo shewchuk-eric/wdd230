@@ -48,24 +48,24 @@ localStorage.setItem('myVisitorCount', visitsCounter);
 *************************************/
 
 const baseurl = 'https://github.com/shewchuk-eric/wdd230';
-const linksurl = 'https://github.com/shewchuk-eric/wdd230/data/links.json'
+const linksurl = 'data/links.json'
 const linkMenu = document.querySelector('#courseLinks');
 
 async function getLinkData() {
     const response = await fetch(linksurl);
     const data = await response.json();
-    displayLinks(data);
-	// displayLinks(data.lessons); 'data' is the response container and 'lessons' is the name of the array found in the JSON file
+	displayLinks(data.lessons); // 'data' is the response container and 'lessons' is the name of the array found in the JSON file
 }
 
 const displayLinks = (weeks) => {
-    lessons.forEach((week) => {
+    weeks.forEach((week) => {
         let assignment = document.createElement('li');
-		assignment.textContent = `Week ${lesson.lesson}`;
-		lessons.links.forEach(() => {
+		assignment.textContent = `Week ${week.lesson}: `;
+		week.links.forEach((link) => {
 			let individual = document.createElement('a');
-			individual.setAttribute('href', `${url}`);
-			individual.textContent = `${title}`;
+			individual.setAttribute('href', `${link.url}`);
+			individual.textContent = `${link.title} `;
+			assignment.appendChild(individual);
 		})
         linkMenu.appendChild(assignment);
     });
