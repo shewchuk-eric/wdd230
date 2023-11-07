@@ -19,8 +19,13 @@
 </head>
 
 <body>
-    <header>
-        <img src="images/hero-placeholder.jpg" alt="placeholder image" class="hero">   
+    <header id="home">
+        <h1 id="headline">Princeville Chamber of Commerce</h1>
+        <picture>
+            <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+            <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
+            <img src="images/hero-fullsize.webp" alt="image of Hawaiian Nene Geese" width="1200" height="450" class="hero">
+        </picture>
         <nav>
             <button id="menu"></button>
             <ul class="navigation">
@@ -32,9 +37,14 @@
         </nav>
     </header>
     <main>
+        <div class="cta" id="mode">Use Dark Mode</div>
         <button class="cta"><a href="join.html">Join Us</a></button>
-        <h1>Princeville Chamber of Commerce</h1>
-        <section class="directory"></section>
+        <div class="cta" id="layout">Show Grid/Column</div>
+        <h1>Chamber Members</h1>
+        <section id="directory">
+            
+            <!-- Content supplied dynamically by JavaScript (dynamicContent.js) using JSON (members.json) -->
+        </section>
     </main>
     <footer>
         <section class="footer">
@@ -43,6 +53,7 @@
             </section>
         </footer>
         <script src="scripts/chamber.js"></script>
+        <script src="scripts/dynamicContent.js"></script>
 </body>
 
 </html>

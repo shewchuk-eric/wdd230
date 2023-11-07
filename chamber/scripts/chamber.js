@@ -1,16 +1,21 @@
-
-// display the current date to the page
+/*************************************
+* Display current date to the footer *
+*************************************/
 const options = {
     year: "numeric"
 };
 const today = document.querySelector('#date').innerHTML = new Date().toLocaleDateString("en-US", options);
 
 
-// display the date of last modification to the page
+/************************************************
+* Display date of last modification to the page *
+************************************************/
 document.querySelector('#modified').innerHTML = `${document.lastModified}`;
 
 
-// code for responsive nav menu
+/************************************************
+* Responsive menu controller - Hamburger button *
+************************************************/
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
 
@@ -20,7 +25,9 @@ hamButton.addEventListener('click', () => {
 });
 
 
-// code to toggle dark mode
+/********************************
+* Dark mode controller (toggle) *
+********************************/
 const modeButton = document.querySelector("#mode");
 const body = document.querySelector("body");
 const html = document.querySelector("html");
@@ -60,3 +67,4 @@ modeButton.addEventListener("click", () => {
 		modeButton.textContent = "Use Dark Mode";
 	}
 });
+

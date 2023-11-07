@@ -249,7 +249,7 @@ a {
   margin: 0.5rem auto;
 }
 
-.cta a {
+.cta a, #layout {
   color: #d9d9d9;
 }
 
@@ -637,3 +637,5 @@ form {
     grid-column: 1/3;
   }
 }
+
+/*# sourceMappingURL=base.css.map */

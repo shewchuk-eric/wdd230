@@ -1,0 +1,76 @@
+{
+    "members": [
+        {
+        "name": "Red Hot Mama's",
+        "address": "5-4280 Kuhio Hwy Suite C-102",
+        "phone": "(808) 378-2288",
+        "web": "https://redhotmamaskauai.square.site/",
+        "pic": "images/members/hotmama.webp",
+        "level": "Silver",
+        "slug": "Fresh, local, organic Mexican food! Specializing in tacos, burritos, salads, fresh house made juices and drinks"
+        },
+        {
+        "name": "Oceanfront Sotheby's Realty",
+        "address": "5-4280 Kuhio Hwy suite g-104",
+        "phone": "(808) 826-7211",
+        "web": "http://www.oceanfrontsir.com/",
+        "pic": "images/members/sothebys.webp",
+        "level": "Gold",
+        "slug": "Oceanfront Sotheby’s International Realty has a team of highly trained sales associates who are passionate about providing the highest levels of service. How may we assist you?"
+        },
+        {
+        "name": "",
+        "address": "",
+        "phone": "",
+        "web": "",
+        "pic": "",
+        "level": "",
+        "slug": ""
+        },
+        {
+        "name": "",
+        "address": "",
+        "phone": "",
+        "web": "",
+        "pic": "",
+        "level": "",
+        "slug": ""
+        },
+        {
+        "name": "",
+        "address": "",
+        "phone": "",
+        "web": "",
+        "pic": "",
+        "level": "",
+        "slug": ""
+        },
+        {
+        "name": "",
+        "address": "",
+        "phone": "",
+        "web": "",
+        "pic": "",
+        "level": "",
+        "slug": ""
+        },
+        {
+        "name": "",
+        "address": "",
+        "phone": "",
+        "web": "",
+        "pic": "",
+        "level": "",
+        "slug": ""
+        },
+        {
+        "name": "",
+        "address": "",
+        "phone": "",
+        "web": "",
+        "pic": "",
+        "level": "",
+        "slug": ""
+        }
+    ]
+}
