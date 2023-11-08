@@ -1,0 +1,60 @@
+/**************************************** DIRECTORY PAGE SPECIFIC STYLES *********************************************/
+#directory {
+    text-align: center;
+}
+#content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: .5rem;
+    text-align: center;
+    & h1 {
+        grid-area: 1/1/2/-1;;
+    }
+    & #layout {
+        grid-area: 2/1/3/-1;
+    }
+    & p {
+        margin: .2rem;
+    }
+    & button {
+        padding: .5rem;
+    }
+}
+.memberCard {
+    margin: 1rem auto;
+    border: $border;
+    padding: 1rem;
+    & img {
+        margin-bottom: 1rem;
+    }
+}
+#content.list {
+	display: flex;
+	flex-direction: column;
+    margin-top: 1rem;
+    text-align: left;
+}
+#content.list div {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
+	margin: 0;
+	padding: 0.25rem;
+    margin-bottom: .5rem;
+}
+#content.list div > * {
+	margin: 0 1rem;
+}
+#content.list div img {
+	display: none; /* smaller viewports only */
+}
+#content.list div:nth-child(even) {
+	background-color: $light;
+}
+/**************************************** DIRECTORY PAGE SPECIFIC STYLES > 600px *********************************************/
+@media (min-width: 600px) {
+    #directory{
+        grid-column: 1 /-1;
+    }
+}
+
+

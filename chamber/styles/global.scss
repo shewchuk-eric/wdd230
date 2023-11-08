@@ -1,0 +1,155 @@
+html {
+    background-color: $text;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    color: $text;
+}
+
+body {
+    background-color: white;
+    min-width: 450px;
+    margin: $center;
+    border: $border;
+}
+
+.hero {
+    max-width: 100%;
+    height: auto;
+    margin: 0px;
+}
+
+header {
+    position: relative;
+}
+
+#headline {
+    position: absolute;
+    padding-top: 20%;
+    font-size: 2rem;
+    left: 1em;
+    text-shadow: 2px 2px 3px $light;
+}
+
+header ul {
+    margin-top: 0px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 0 1rem;
+}
+
+main img {
+    border: $border;
+    @include shadow;
+    max-width: 100%;
+}
+
+.show {
+    max-width: 100%;
+    height: auto;
+}
+
+#mode {
+    display: block;
+    background-color: $light;
+    color: $text;
+}
+
+a {
+    text-decoration: none;
+}
+
+.cta {
+    display: block;
+    max-width: 80%;
+    text-align: center;
+    font-size: 1rem;
+    background-color: $main;
+    border-color: $accent;
+    border-radius: .6rem;
+    padding: 1rem 1.5rem;
+    margin: .5rem auto;
+}
+
+.cta a, #layout {
+    color: $light;
+}
+
+h1, h2, h3 {
+    font-size: 2.5rem;
+    font-family: 'Allura', cursive;
+    color: $main;
+    margin-bottom: .5rem;
+}
+
+footer {
+    border-top: 2px solid $main;
+    text-align: center;
+}
+
+footer h4, #modified {
+    display: inline;
+}
+/**************************************** GLOBAL STYLES > 600px *********************************************/
+@media (min-width: 600px) {
+    body {
+        max-width: 900px;
+    }
+    main {
+        display: grid;
+        grid-template-columns: 1fr 35%;
+    }
+    #headline {
+        padding-top: 19%;
+        font-size: 2.5rem;
+    }
+    #mode {
+        display: inline;
+        grid-area: 1/1/2/2;
+        justify-self: left;
+        background-color: $light;
+        color: $text;
+    }
+    main h1 {
+        font-size: 3rem;
+    }
+    .cta {
+        max-width: fit-content;
+        display: inline-block;
+    }
+    .cta a {
+        padding: 1rem 2rem;
+    }
+    h1, h2, h3 {
+        font-size: 3rem;
+    }
+}
+/**************************************** GLOBAL STYLES > 900px *********************************************/
+@media (min-width: 900px) {    
+    body {
+        max-width: 1200px;
+    }
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+    }
+    #headline {
+        padding-top: 19%;
+        font-size: 3rem;
+    }
+    #cta {
+        grid-area: 1/2/2/3;
+        justify-self: center;
+    }
+    footer {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .footer {
+        grid-column: 2/3;
+        text-align: center;
+    }
+}

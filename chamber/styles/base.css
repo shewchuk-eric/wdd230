@@ -269,6 +269,66 @@ footer h4, #modified {
   display: inline;
 }
 
+/**************************************** GLOBAL STYLES > 600px *********************************************/
+@media (min-width: 600px) {
+  body {
+    max-width: 900px;
+  }
+  main {
+    display: grid;
+    grid-template-columns: 1fr 35%;
+  }
+  #headline {
+    padding-top: 19%;
+    font-size: 2.5rem;
+  }
+  #mode {
+    display: inline;
+    grid-area: 1/1/2/2;
+    justify-self: left;
+    background-color: #d9d9d9;
+    color: #353535;
+  }
+  main h1 {
+    font-size: 3rem;
+  }
+  .cta {
+    max-width: fit-content;
+    display: inline-block;
+  }
+  .cta a {
+    padding: 1rem 2rem;
+  }
+  h1, h2, h3 {
+    font-size: 3rem;
+  }
+}
+/**************************************** GLOBAL STYLES > 900px *********************************************/
+@media (min-width: 900px) {
+  body {
+    max-width: 1200px;
+  }
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+  #headline {
+    padding-top: 19%;
+    font-size: 3rem;
+  }
+  #cta {
+    grid-area: 1/2/2/3;
+    justify-self: center;
+  }
+  footer {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .footer {
+    grid-column: 2/3;
+    text-align: center;
+  }
+}
 /*************************************** NAVIGATION *******************************************/
 #menu {
   font-size: 1.5rem;
@@ -327,6 +387,37 @@ footer h4, #modified {
   display: block;
 }
 
+/**************************************** NAVIGATION STYLES > 600px *********************************************/
+@media (min-width: 600px) {
+  #menu {
+    display: none; /* hide hamburger button */
+  }
+  nav {
+    display: block;
+    max-width: 100%;
+    background-color: #284b63;
+  }
+  .navigation {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: end;
+  }
+  .navigation li {
+    display: block;
+  }
+  .navigation li a {
+    color: #d9d9d9;
+  }
+  .navigation li a:hover {
+    color: #3c6e71;
+    background-color: #284b63;
+  }
+  .navigation li a.active {
+    color: white;
+    background-color: #3c6e71;
+    font-weight: bold;
+  }
+}
 /**************************************** HOME PAGE SPECIFIC STYLES *********************************************/
 .spotlight, .weather {
   max-width: 85%;
@@ -385,29 +476,114 @@ iframe {
   color: #3c6e71;
 }
 
-/**************************************** DISCOVER PAGE SPECIFIC STYLES *********************************************/
-#discover-sidebar article {
+/**************************************** HOME PAGE SPECIFIC STYLES > 700px *********************************************/
+@media (min-width: 700px) {
+  .spotlight {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 100%;
+  }
+  #spot-head {
+    grid-column: 1/-1;
+  }
+}
+/**************************************** HOME PAGE SPECIFIC STYLES > 900px *********************************************/
+@media (min-width: 900px) {
+  .events {
+    grid-area: 2/1/3/3;
+    max-width: 80%;
+  }
+  .events img {
+    max-width: 100%;
+  }
+  .weather {
+    grid-area: 2/3/3/5;
+  }
+  .spotlight {
+    grid-area: 3/1/4/4;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-shrink: 1;
+  }
+  .spotlight article {
+    max-width: 30%;
+  }
+  #spot-head {
+    width: 90%;
+  }
+  .member img {
+    max-width: 80%;
+  }
+}
+/**************************************** DIRECTORY PAGE SPECIFIC STYLES *********************************************/
+#directory {
+  text-align: center;
+}
+
+#content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 0.5rem;
+  text-align: center;
+}
+#content h1 {
+  grid-area: 1/1/2/-1;
+}
+#content #layout {
+  grid-area: 2/1/3/-1;
+}
+#content p {
+  margin: 0.2rem;
+}
+#content button {
+  padding: 0.5rem;
+}
+
+.memberCard {
+  margin: 1rem auto;
   border: 3px solid #3c6e71;
-  box-shadow: 0.4em 0.4em 0.7em #353535;
-  margin-bottom: 15px;
+  padding: 1rem;
 }
-#discover-sidebar article h3 {
-  padding-top: 0;
-  margin: 0 0 0 7px;
+.memberCard img {
+  margin-bottom: 1rem;
 }
 
-.stats {
-  padding: 8px;
+#content.list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  text-align: left;
 }
 
-#discover-main img {
-  transition: 1s;
+#content.list div {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  margin: 0;
+  padding: 0.25rem;
+  margin-bottom: 0.5rem;
 }
 
-#discover-main img:hover {
-  transform: scale(1.01);
+#content.list div > * {
+  margin: 0 1rem;
 }
 
+#content.list div img {
+  display: none; /* smaller viewports only */
+}
+
+#content.list div:nth-child(even) {
+  background-color: #d9d9d9;
+}
+
+/**************************************** DIRECTORY PAGE SPECIFIC STYLES > 600px *********************************************/
+@media (min-width: 600px) {
+  #directory {
+    grid-column: 1/-1;
+  }
+}
 /**************************************** JOIN PAGE FORM/TABLE STYLES *********************************************/
 form {
   width: 95%;
@@ -486,75 +662,6 @@ tbody tr:nth-child(even) {
   background-color: rgb(212, 212, 212);
 }
 
-@media (min-width: 600px) {
-  #menu {
-    display: none; /* hide hamburger button */
-  }
-  nav {
-    display: block;
-    max-width: 100%;
-    background-color: #284b63;
-  }
-  .navigation {
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: end;
-  }
-  .navigation li {
-    display: block;
-  }
-  .navigation li a {
-    color: #d9d9d9;
-  }
-  .navigation li a:hover {
-    color: #3c6e71;
-    background-color: #284b63;
-  }
-  .navigation li a.active {
-    color: white;
-    background-color: #3c6e71;
-    font-weight: bold;
-  }
-  body {
-    max-width: 900px;
-  }
-  main {
-    display: grid;
-    grid-template-columns: 1fr 35%;
-  }
-  #headline {
-    padding-top: 19%;
-    font-size: 2.5rem;
-  }
-  #mode {
-    display: inline;
-    grid-area: 1/1/2/2;
-    justify-self: left;
-    background-color: #d9d9d9;
-    color: #353535;
-  }
-  main h1 {
-    font-size: 3rem;
-  }
-  .cta {
-    max-width: fit-content;
-    display: inline-block;
-  }
-  .cta a {
-    padding: 1rem 2rem;
-  }
-  h1, h2, h3 {
-    font-size: 3rem;
-  }
-  /**************************************** DISCOVER PAGE SPECIFIC STYLES > 600px *********************************************/
-  #discover-sidebar {
-    margin-left: 15px;
-  }
-  figcaption {
-    margin-bottom: 1rem;
-  }
-}
-/**************************************** JOIN PAGE FORM STYLES *********************************************/
 form {
   grid-column: 1;
 }
@@ -563,78 +670,51 @@ form {
   grid-column: 1/-1;
 }
 
-/**************************************** HOME PAGE SPECIFIC STYLES *********************************************/
-@media (min-width: 700px) {
-  .spotlight {
-    grid-column: 1/-1;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    max-width: 100%;
-  }
-  #spot-head {
-    grid-column: 1/-1;
+/**************************************** FORM/TABLE STYLES > 900px *********************************************/
+@media (min-width: 900px) {
+  form {
+    grid-column: 1/3;
   }
 }
+/**************************************** DISCOVER PAGE SPECIFIC STYLES *********************************************/
+#discover-sidebar article {
+  border: 3px solid #3c6e71;
+  box-shadow: 0.4em 0.4em 0.7em #353535;
+  margin-bottom: 15px;
+}
+#discover-sidebar article h3 {
+  padding-top: 0;
+  margin: 0 0 0 7px;
+}
+
+.stats {
+  padding: 8px;
+}
+
+#discover-main img {
+  transition: 1s;
+}
+
+#discover-main img:hover {
+  transform: scale(1.01);
+}
+
+/**************************************** DISCOVER PAGE SPECIFIC STYLES > 600px *********************************************/
+@media (min-width: 600px) {
+  #discover-sidebar {
+    margin-left: 15px;
+  }
+  figcaption {
+    margin-bottom: 1rem;
+  }
+}
+/**************************************** DISCOVER PAGE SPECIFIC STYLES > 900px *********************************************/
 @media (min-width: 900px) {
-  body {
-    max-width: 1200px;
-  }
-  main {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem;
-  }
-  #headline {
-    padding-top: 19%;
-    font-size: 3rem;
-  }
-  #cta {
-    grid-area: 1/2/2/3;
-    justify-self: center;
-  }
   #discover-main {
     grid-area: 2/1/3/3;
   }
   #discover-sidebar {
     grid-area: 2/3/3/4;
-  }
-  .events {
-    grid-area: 2/1/3/3;
-    max-width: 80%;
-  }
-  .events img {
-    max-width: 100%;
-  }
-  .weather {
-    grid-area: 2/3/3/5;
-  }
-  .spotlight {
-    grid-area: 3/1/4/4;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    flex-shrink: 1;
-  }
-  .spotlight article {
-    max-width: 30%;
-  }
-  #spot-head {
-    width: 90%;
-  }
-  .member img {
-    max-width: 80%;
-  }
-  footer {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  .footer {
-    grid-column: 2/3;
-    text-align: center;
-  }
-  /**************************************** JOIN PAGE FORM STYLES *********************************************/
-  form {
-    grid-column: 1/3;
   }
 }
 

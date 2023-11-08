@@ -19,58 +19,58 @@
         "slug": "Oceanfront Sotheby’s International Realty has a team of highly trained sales associates who are passionate about providing the highest levels of service. How may we assist you?"
         },
         {
-        "name": "",
-        "address": "",
-        "phone": "",
-        "web": "",
-        "pic": "images/members/placeholder.jpg",
-        "level": "",
-        "slug": ""
+        "name": "1 Hotel Hanalei Bay",
+        "address": "5520 Ka Haku Rd, Princeville, HI 96722",
+        "phone": "(808) 826-9644",
+        "web": "https://www.1hotels.com/hanalei-bay?utm_source=google-gbp&utm_medium=organic&utm_campaign=gbp",
+        "pic": "images/members/one-hotel.webp",
+        "level": "Gold",
+        "slug": "Kauai's finest 5-star hotel."
         },
         {
-        "name": "",
-        "address": "",
-        "phone": "",
-        "web": "",
-        "pic": "images/members/placeholder.jpg",
-        "level": "",
-        "slug": ""
+        "name": "Neighbors Cafe",
+        "address": "Inside 1 Hotel Hanalei Bay",
+        "phone": "(808) 826-9644",
+        "web": "https://www.1hotels.com/hanalei-bay/taste/neighbors",
+        "pic": "images/members/neighbors.webp",
+        "level": "Silver",
+        "slug": "Our all-day café, market and communal gathering spot for guests and locals. Catch up with cold-pressed juices, kombucha and wellness shots, (thanks to our friends at Kaua’i Juice Co), recharge with barista-brewed local coffee from Hanalei Coffee Roasters or linger over a nutrient-rich breakfast of chia parfaits, overnight oats, housemade pastries, sustainable salads."
         },
         {
-        "name": "",
-        "address": "",
-        "phone": "",
-        "web": "",
-        "pic": "images/members/placeholder.jpg",
-        "level": "",
-        "slug": ""
+        "name": "Lotus Garden Chinese & Thai Cuisine",
+        "address": "54280 Kuhio Hwy C1, Hanalei, HI 96714",
+        "phone": "(808) 826-9999",
+        "web": "http://places.singleplatform.com/lotus-garden-thai--chinese/menu?ref=google",
+        "pic": "images/members/lotus.webp",
+        "level": "Bronze",
+        "slug": "Small, casual dining experience with freshly made food using local ingredients."
         },
         {
-        "name": "",
-        "address": "",
-        "phone": "",
-        "web": "",
-        "pic": "images/members/placeholder.jpg",
-        "level": "",
-        "slug": ""
+        "name": "The Cliffs At Princeville",
+        "address": "3811 Edward Rd, Princeville, HI 96722",
+        "phone": "(808) 826-6219",
+        "web": "http://www.cliffsatprinceville.com/?utm_source=google&utm_medium=local&utm_campaign=gmb_listing",
+        "pic": "images/members/cliffs.webp",
+        "level": "Gold",
+        "slug": "On a bluff overlooking the Pacific on Kauai's north shore, this polished condo resort is a 10-minute drive from the Hanalei National Wildlife Refuge and 2 miles from Princeville Golf Club."
         },
         {
-        "name": "",
-        "address": "",
-        "phone": "",
-        "web": "",
-        "pic": "images/members/placeholder.jpg",
-        "level": "",
-        "slug": ""
+        "name": "Wai'oli Mission House",
+        "address": "5-5373 Kuhio Hwy, Hanalei, HI 96714",
+        "phone": "(808) 826-1528",
+        "web": "Coming Soon!",
+        "pic": "images/members/waioli-house.webp",
+        "level": "Bronze",
+        "slug": "Embark on a guided tour that tells a great story about life life as a missionary in Hawaii more than 100 years ago. The house is kept clean and faithful to its original form including the garden that is well maintained and produces fruits and vegetables using techniques that were in use historically."
         },
         {
-        "name": "",
-        "address": "",
-        "phone": "",
-        "web": "",
-        "pic": "images/members/placeholder.jpg",
-        "level": "",
-        "slug": ""
+        "name": "Limahuli National Tropical Botanical Garden",
+        "address": "5-8291 Kuhio Hwy, Hanalei, HI 96714",
+        "phone": "(808) 826-1053",
+        "web": "https://ntbg.org/gardens/limahuli",
+        "pic": "images/members/limahuli.webp",
+        "level": "Gold",
+        "slug": "Botanic garden overlooking the Pacific Ocean featuring collections of native & introduced plants."
         }
     ]
 }
