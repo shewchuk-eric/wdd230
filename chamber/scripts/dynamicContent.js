@@ -8,7 +8,7 @@ const memberList = document.querySelector('#content');
 async function getLinkData() {
     const response = await fetch(listurl);
     const data = await response.json();
-	displayLinks(data.members); // 'data' is the response container and 'lessons' is the name of the array found in the JSON file
+	displayLinks(data.members); // 'data' is the response container and 'members' is the name of the array found in the JSON file
 }
 
 const displayLinks = (members) => {
