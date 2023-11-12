@@ -419,13 +419,14 @@ footer h4, #modified {
   }
 }
 /**************************************** HOME PAGE SPECIFIC STYLES *********************************************/
-.spotlight, .weather {
+.spotlight {
   max-width: 85%;
   margin: 0.5rem auto;
 }
 
 .weather {
   padding: 1rem;
+  margin: 1.5rem auto 0.5rem auto;
 }
 
 #sunshine {
@@ -434,13 +435,30 @@ footer h4, #modified {
   display: flex;
   padding: 0 1rem;
   display: block;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
+}
+#sunshine h3 {
+  font-size: 1.9rem;
+}
+#sunshine figure {
+  margin: 0 auto;
+  width: 70%;
 }
 
 #sunshine img {
   border: none;
   box-shadow: none;
   width: 40%;
+}
+
+#forecast {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.temperature {
+  align-self: center;
+  justify-self: center;
 }
 
 .member {
@@ -474,6 +492,48 @@ iframe {
 
 .spotlight a {
   color: #3c6e71;
+}
+
+/**************************************** MODAL *********************************************/
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #353535;
+  color: #d9d9d9;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 3px solid #3c6e71;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+.modal-content h2 {
+  color: #66a9ad;
+}
+
+/* The Close Button */
+#close {
+  color: #66a9ad;
+  float: right;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+#close:hover,
+#close:focus {
+  color: #284b63;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /**************************************** HOME PAGE SPECIFIC STYLES > 700px *********************************************/

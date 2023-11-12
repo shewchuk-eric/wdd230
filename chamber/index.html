@@ -42,6 +42,15 @@
         </nav>
     </header>
     <main>
+
+        <div id="myModal" class="modal"><!--Only displays on Monday, Tuesday, Wednesday - uses JS-->
+            <div class="modal-content">
+              <span id="close">&times;</span>
+              <p><h2>You're Invited!</h2>
+                Our weekly Chamber Mixer is the best way to make new friends and create valuable business connections.<br>Where: Princeville Community Center (between Princeville Center and the park).<br>When: 7-9pm<br>Drinks and snacks provided.<br>RSVP to notRealEmail@gmail.com</p>
+            </div>     
+          </div>
+
         <div class="cta" id="mode">Use Dark Mode</div>
         <div class="cta" id="cta"><a href="join.html">Join Us</a></div>
         <section class="events">
@@ -53,7 +62,7 @@
         <section class="weather">
             <article id="sunshine">
                 <h2>Weather</h2>
-                <p>Current Temp: <span id="current-temp"></span></p>
+                <p>Today's Temp: <span id="current-temp"></span></p>
                 <figure>
                     <img id="weather-icon" src="" alt="">
                     <figcaption></figcaption>
@@ -61,8 +70,8 @@
                 <p>Wind Speed: <span id="speed"></span></p>
                 <p>Feels Like: <span id="chill"></span></p>
                 <hr>
-            <h2>3 Day Forecast</h2>
-                <span id="forecast"></span>
+            <h3>3 Day Forecast</h3>
+                <article id="forecast"></article>
             </article>
         </section>
 
@@ -82,6 +91,7 @@
         </footer>
         <script src="scripts/chamber.js"></script>
         <script src="scripts/weather.js"></script>
+        <script src="scripts/inviteBanner.js"></script>
 </body>
 
 </html>
