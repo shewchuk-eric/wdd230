@@ -182,7 +182,7 @@ html {
 
 body {
   background-color: white;
-  min-width: 450px;
+  min-width: 400px;
   margin: 0 auto;
   border: 3px solid #3c6e71;
 }
@@ -462,7 +462,7 @@ iframe {
 }
 
 .events {
-  max-width: 100%;
+  max-width: 95%;
   margin: 0 auto;
 }
 
