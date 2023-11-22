@@ -1,9 +1,4 @@
 /**************************************** HOME PAGE SPECIFIC STYLES *********************************************/
-.spotlight {
-    max-width: 85%;
-    margin: .5rem auto;
-}
-
 .weather {
     padding: 1rem;
     margin: 1.5rem auto .5rem auto;
@@ -41,19 +36,6 @@
         justify-self: center;
 }
 
-.member {
-    display: flex;
-    flex-direction: column;
-}
-
-.member a {
-    text-decoration: underline;
-}
-
-.member p::first-line {
-    font-weight: bold;
-}
-
 iframe {
     width: 100%;
     height: auto;
@@ -70,8 +52,82 @@ iframe {
     margin: $center;
 }
 
+/**************************************** SPOTLIGHT STYLES *********************************************/
+.spotlight {
+    max-width: 90%;
+    margin: .5rem auto;
+    grid-column: 1/-1;
+}
+
+#cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.member {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.member a {
+    text-decoration: underline;
+}
+
+.member img{
+    max-width: 100%;
+}
+
+.member p::first-line {
+    font-weight: bold;
+}
+
 .spotlight a {
     color: $accent;
+}
+
+@media (min-width: 700px) {
+    // .spotlight {
+    //     grid-column: 1 / -1;
+    //     display: grid;
+    //     grid-template-columns: 1fr 1fr;
+    //     gap: 20px;
+    //     max-width: 100%;
+    // }
+    #spot-head {
+        display: block;
+    }
+}
+
+@media (min-width: 900px) {
+    .events {
+        grid-area: 2/1/3/3;
+        max-width: 80%;
+    }
+    .events img {
+        max-width: 100%;
+    }
+    .weather {
+        grid-area: 2/3/3/5;
+    }
+    .spotlight {
+        grid-area: 3/1/4/4;
+        // display: flex;
+        // flex-direction: row;
+        // flex-wrap: wrap;
+        // justify-content: space-around;
+        // flex-shrink: 1;
+    }
+    .spotlight article {
+        max-width: 30%;
+    }   
+    // #spot-head {
+    //     width: 90%;
+    // }
+    // .member img{
+    //     max-width: 80%;
+    // }
 }
 
 /**************************************** MODAL *********************************************/
@@ -95,7 +151,8 @@ iframe {
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
     border: $border;
-    width: 80%; /* Could be more or less, depending on screen size */
+    line-height: 1.4;
+    width: 60%; /* Could be more or less, depending on screen size */
     & h2 {
         color: lighten($accent, 20);
     }
@@ -115,45 +172,3 @@ iframe {
     text-decoration: none;
     cursor: pointer;
   }
-/**************************************** HOME PAGE SPECIFIC STYLES > 700px *********************************************/
-@media (min-width: 700px) {
-    .spotlight {
-        grid-column: 1 / -1;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-        max-width: 100%;
-    }
-    #spot-head {
-        grid-column: 1 / -1;
-    }
-}
-/**************************************** HOME PAGE SPECIFIC STYLES > 900px *********************************************/
-@media (min-width: 900px) {
-    .events {
-        grid-area: 2/1/3/3;
-        max-width: 80%;
-    }
-    .events img {
-        max-width: 100%;
-    }
-    .weather {
-        grid-area: 2/3/3/5;
-    }
-    .spotlight {
-        grid-area: 3/1/4/4;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        flex-shrink: 1;
-    }
-    .spotlight article {
-        max-width: 30%;
-    }   
-    #spot-head {
-        width: 90%;
-    }
-    .member img{
-        max-width: 80%;
-    }
-}
