@@ -1,0 +1,26 @@
+/*************************************************************************
+* Scoots Rentals - WDD230 Final Project styles - Author: Eric Shewchuk *
+*************************************************************************/
+
+// sass --watch scoots/styles/base.scss:scoots/styles/base.css
+
+// COMBINE CSS FILES
+@use 'normalize';
+
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+
+// set global variables
+
+    $main: #284b63;
+    $accent: #3c6e71;
+    $text: #353535;
+    $light: #d9d9d9;
+    $border: 3px solid $accent;
+    $center: 0 auto;
+
+/******************** end of normalize ********************/
+
+@import 'global';
+@import 'navigation';
+@import 'weather';
+@import 'form';
