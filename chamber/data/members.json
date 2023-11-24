@@ -7,7 +7,8 @@
         "web": "https://redhotmamaskauai.square.site/",
         "pic": "images/members/hotmama.webp",
         "level": "Bronze",
-        "slug": "Fresh, local, organic Mexican food! Specializing in tacos, burritos, salads, fresh house made juices and drinks"
+        "slug": "Fresh, local, organic Mexican food! Specializing in tacos, burritos, salads, fresh house made juices and drinks",
+        "alt": "Red Hot Mama's sign"
         },
         {
         "name": "Oceanfront Sotheby's Realty",
@@ -16,7 +17,8 @@
         "web": "http://www.oceanfrontsir.com/",
         "pic": "images/members/sothebys.webp",
         "level": "Gold",
-        "slug": "Oceanfront Sotheby’s International Realty has a team of highly trained sales associates who are passionate about providing the highest levels of service. How may we assist you?"
+        "slug": "Oceanfront Sotheby’s International Realty has a team of highly trained sales associates who are passionate about providing the highest levels of service.",
+        "alt": "sign outside entrance of Sotheby's Oceanfront realty"
         },
         {
         "name": "1 Hotel Hanalei Bay",
@@ -25,7 +27,8 @@
         "web": "https://www.1hotels.com/hanalei-bay?utm_source=google-gbp&utm_medium=organic&utm_campaign=gbp",
         "pic": "images/members/one-hotel.webp",
         "level": "Gold",
-        "slug": "Kauai's finest 5-star hotel."
+        "slug": "Kauai's finest 5-star hotel.",
+        "alt": "one of the hotel's pools"
         },
         {
         "name": "Neighbors Cafe",
@@ -34,7 +37,8 @@
         "web": "https://www.1hotels.com/hanalei-bay/taste/neighbors",
         "pic": "images/members/neighbors.webp",
         "level": "Silver",
-        "slug": "Our all-day café, market and communal gathering spot for guests and locals. Catch up with cold-pressed juices, kombucha and wellness shots, (thanks to our friends at Kaua’i Juice Co), recharge with barista-brewed local coffee from Hanalei Coffee Roasters or linger over a nutrient-rich breakfast of chia parfaits, overnight oats, housemade pastries, sustainable salads."
+        "slug": "Catch up with cold-pressed juices, kombucha, barista-brewed coffee from Hanalei Coffee Roasters. Or enjoy overnight oats, housemade pastries, sustainable salads and more.",
+        "alt": "dining room inside neighbors cafe"
         },
         {
         "name": "Lotus Garden Chinese & Thai Cuisine",
@@ -43,7 +47,8 @@
         "web": "http://places.singleplatform.com/lotus-garden-thai--chinese/menu?ref=google",
         "pic": "images/members/lotus.webp",
         "level": "Bronze",
-        "slug": "Small, casual dining experience with freshly made food using local ingredients."
+        "slug": "Small, casual dining experience with freshly made food using local ingredients.",
+        "alt": "entrance of lotus chinese and thai cuisine"
         },
         {
         "name": "The Cliffs At Princeville",
@@ -52,7 +57,8 @@
         "web": "http://www.cliffsatprinceville.com/?utm_source=google&utm_medium=local&utm_campaign=gmb_listing",
         "pic": "images/members/cliffs.webp",
         "level": "Gold",
-        "slug": "On a bluff overlooking the Pacific on Kauai's north shore, this polished condo resort is a 10-minute drive from the Hanalei National Wildlife Refuge and 2 miles from Princeville Golf Club."
+        "slug": "On a bluff overlooking the Pacific on Kauai's north shore, this resort is a short drive from Princeville Golf Club.",
+        "alt": "condo building and palm trees"
         },
         {
         "name": "Wai'oli Mission House",
@@ -61,7 +67,8 @@
         "web": "Coming Soon!",
         "pic": "images/members/waioli-house.webp",
         "level": "Bronze",
-        "slug": "Embark on a guided tour that tells a great story about life life as a missionary in Hawaii more than 100 years ago. The house is kept clean and faithful to its original form including the garden that is well maintained and produces fruits and vegetables using techniques that were in use historically."
+        "slug": "Embark on a guided tour that tells a great story about life as a missionary in Hawaii more than 100 years ago.",
+        "alt": "historic mission house"
         },
         {
         "name": "Limahuli National Tropical Botanical Garden",
@@ -70,7 +77,8 @@
         "web": "https://ntbg.org/gardens/limahuli",
         "pic": "images/members/Limahuli.webp",
         "level": "Gold",
-        "slug": "Botanic garden overlooking the Pacific Ocean featuring collections of native & introduced plants."
+        "slug": "Botanic garden overlooking the Pacific Ocean featuring collections of native & introduced plants.",
+        "alt": "hillside garden"
         }
     ]
 }
