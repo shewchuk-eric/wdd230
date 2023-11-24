@@ -11,16 +11,20 @@
 
 // set global variables
 
-    $main: #284b63;
-    $accent: #3c6e71;
-    $text: #353535;
-    $light: #d9d9d9;
-    $border: 3px solid $accent;
+    $darkgreen: #343F3E;
+    $lightgreen: #505A5B;
+    $text: #1A1A1A;
+    $lightblue: #DCEDFF;
+    $gray: #8F91A2;
+    $darkblue: #94B0DA;
+
+    $border: 3px solid $lightgreen;
     $center: 0 auto;
 
 /******************** end of normalize ********************/
 
 @import 'global';
 @import 'navigation';
+@import 'layouts';
 @import 'weather';
 @import 'form';
