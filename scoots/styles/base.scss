@@ -8,18 +8,18 @@
 // COMBINE CSS FILES
 @use 'normalize';
 
-@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap');
 
 // set global variables
 
-    $darkgreen: #343F3E;
-    $lightgreen: #505A5B;
-    $text: #1A1A1A;
-    $lightblue: #DCEDFF;
-    $gray: #8F91A2;
-    $darkblue: #94B0DA;
+    $darkblue: #22798F;
+    $midblue: #4ABFDB;
+    $lightblue: #70E2FF;
+    $text: #2a2b2b;
+    $brown: #8F4F14;
+    $tan: #DB904B;
 
-    $border: 3px solid $lightgreen;
+    $border: 3px solid $brown;
     $center: 0 auto;
 
 /******************** end of normalize ********************/

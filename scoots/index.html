@@ -48,10 +48,28 @@
                 ✔️ Include any weather alerts if available (applicable) from the government and display it as a closeable message at the top of the page.
                 ✔️ Also display and label a one day forecast.
         -->
+
+        <div class="cta" id="cta"><a href="reservations.html">Make A Reservation!</a></div>
+
+        <section class="weather">
+            <article id="sunshine">
+                <h2>Weather</h2>
+                <p>Today's Temp: <span id="current-temp"></span></p>
+                <figure>
+                    <img id="weather-icon" src="" alt="">
+                    <figcaption></figcaption>
+                </figure>
+                <p>Wind Speed: <span id="speed"></span></p>
+                <p>Feels Like: <span id="chill"></span></p>
+                <hr>
+            <h3>3 Day Forecast</h3>
+                <article id="forecast"></article>
+            </article>
+        </section>
     </main>
     <footer>
         
     </footer>
-    <script src="scripts/scoots.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 </html>
