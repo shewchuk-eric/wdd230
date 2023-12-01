@@ -172,15 +172,107 @@ template {
 }
 
 /******************** end of normalize ********************/
+:root {
+  --ratio: 1.5;
+  --s-5: calc(var(--s-4) / var(--ratio));
+  --s-4: calc(var(--s-3) / var(--ratio));
+  --s-3: calc(var(--s-2) / var(--ratio));
+  --s-2: calc(var(--s-1) / var(--ratio));
+  --s-1: calc(var(--s0) / var(--ratio));
+  --s0: 1rem;
+  --s1: calc(var(--s0) * var(--ratio));
+  --s2: calc(var(--s1) * var(--ratio));
+  --s3: calc(var(--s2) * var(--ratio));
+  --s4: calc(var(--s3) * var(--ratio));
+  --s5: calc(var(--s4) * var(--ratio));
+  --wght: 400;
+}
+
 html {
-  background-color: white;
+  background-color: #70E2FF;
   font-family: "Sen", Arial, sans-serif;
-  font-size: 1rem;
+  font-size: var(--s0);
   color: #2a2b2b;
 }
 
+body {
+  max-width: 100%;
+  background-color: white;
+  padding: 2rem;
+}
+
+h1 {
+  font-size: var(--s2);
+  font-weight: var(--wght150);
+}
+
+h2 {
+  font-size: var(--s1);
+}
+
+form {
+  width: clamp(90%, 600px, 900px);
+  margin: 2rem auto 3rem auto;
+  background-color: #bdf2ff;
+  padding: 0.7rem;
+}
+
+fieldset {
+  border: 3px solid #8F4F14;
+  color: #22798F;
+}
+
+legend {
+  margin: 0 0 0 1.5rem;
+  padding: 0 1rem;
+  color: #22798F;
+}
+
+label, input, textarea {
+  display: block;
+}
+
+textarea {
+  width: 70%;
+  max-width: 400px;
+  border: 1px solid #22798F;
+  border-radius: 4px;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+}
+
 #thanks {
-  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  color: #8F4F14;
+}
+
+table {
+  border: 3px solid #8F4F14;
+  border-collapse: collapse;
+  margin-top: 2rem;
+}
+
+thead {
+  background: #DB904B;
+  font-size: 1rem;
+}
+
+th, td {
+  padding: 7px 15px;
+  border: 3px solid #8F4F14;
+}
+
+.lite {
+  background: #e8b78b;
+}
+
+td {
+  text-align: center;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f0d2b5;
 }
 
 /*# sourceMappingURL=base.css.map */

@@ -1,4 +1,4 @@
-const sender = document.querySelector('#submit');
+const sender = document.querySelector('#showMessage');
 const fname = document.querySelector('#fname');
 const msg = document.querySelector('#thanks');
 
