@@ -173,10 +173,14 @@ template {
 
 /******************** end of normalize ********************/
 html {
-  background-color: #2a2b2b;
+  background-color: white;
   font-family: "Sen", Arial, sans-serif;
   font-size: 1rem;
   color: #2a2b2b;
+}
+
+#thanks {
+  color: white;
 }
 
 /*# sourceMappingURL=base.css.map */

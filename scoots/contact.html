@@ -20,23 +20,34 @@
 
 <body>
     <header>
-        <h1>Scoots Rentals</h1>
-        <picture>
-            <source srcset="images/hero-small.webp" media="(max-width: 500px)">
-            <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
-            <img src="images/hero-fullsize.webp" alt="image of Hawaiian Nene Geese" width="1200" height="450" class="hero">
-        </picture>
+        <div id="banner">
+            <h1>Scoots!</h1>
+                <img src="images/hero-fullsize.webp" alt="image of Hawaiian Nene Geese" width="1200" height="450" class="hero">
+            </div>
+            
         <nav>
             <button id="menu"></button>
             <ul class="navigation">
-                <li><a href="#" class="active">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="rentals.html">Rentals</a></li>
                 <li><a href="reservations.html">Reservations</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7390.693681867929!2d-159.31325069826735!3d22.15086572189998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1695846541481!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="map of Anahola, Kauai"></iframe>
+        <form>
+            <fieldset>
+                <legend>Applicant Information</legend>
+                    <label>First Name * <input type="text" id="fname" name="fname" required></label>
+                    <label>Last Name * <input type="text" id="lname" name="lname" required></label>
+                    <label>Email * <input type="email" id="email" name="email" required placeholder="myemail@gmail.com"></label>
+                    <label>How Can We Help?<textarea id="comment" name="comment"></textarea></label>
+                    <input type="submit" value="Get Help" id="submit">
+                    <div id="thanks"></div>
+            </fieldset>
+        </form>
         <!--
             📄 The Contact page will contain:
                 essential contact information,
@@ -47,6 +58,7 @@
     <footer>
         
     </footer>
-    <script src="scripts/scoots.js"></script>
+    <!-- <script src="scripts/scoots.js"></script> -->
+    <script src="scripts/thanks.js"></script>
 </body>
 </html>

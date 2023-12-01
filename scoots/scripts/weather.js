@@ -6,7 +6,7 @@ const chill = document.querySelector("#chill");
 const speed = document.querySelector('#speed');
 const forecast = document.querySelector('#forecast');
 // const url = 'https://api.openweathermap.org/data/2.5/weather?lat=22.22&lon=-159.48&appid=49e215c7377482c19b8ebde5c2bca5a2&units=imperial&lang=en';  good for current day only
-const url = 'https://api.openweathermap.org/data/2.5/forecast?lat=22.22&lon=-159.48&appid=49e215c7377482c19b8ebde5c2bca5a2&units=imperial&lang=en'; // good for forecast
+const url = 'https://api.openweathermap.org/data/2.5/forecast?lat=20.492&lon=-86.938&appid=49e215c7377482c19b8ebde5c2bca5a2&units=imperial&lang=en'; // good for forecast
 
 async function apiFetch() {
     try {
