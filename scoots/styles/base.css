@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*************************************************************************
 * Scoots Rentals - WDD230 Final Project styles - Author: Eric Shewchuk *
 *************************************************************************/
@@ -198,7 +199,16 @@ html {
 body {
   max-width: 100%;
   background-color: white;
-  padding: 2rem;
+}
+
+#banner {
+  position: absolute;
+  background: transparent url("../images/title-background.webp") padding-box no-repeat;
+  background-size: cover;
+  margin: 1rem;
+  padding: 0 0.2rem;
+  max-width: fit-content;
+  border-radius: 0.5rem;
 }
 
 h1 {
@@ -210,6 +220,153 @@ h2 {
   font-size: var(--s1);
 }
 
+iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 550px) {
+  #banner {
+    position: relative;
+    border-radius: 0.5rem;
+  }
+}
+/*************************************** NAVIGATION *******************************************/
+#menu {
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+  padding-top: 0.9rem;
+  margin: 0;
+}
+
+#menu.open::before {
+  content: "✕ ";
+}
+
+nav {
+  background-color: #22798F;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin-right: 1rem;
+}
+
+.navigation li {
+  display: none;
+}
+
+.navigation li a {
+  display: block;
+  padding: 1rem;
+  text-align: center;
+  color: #f0fcff;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.navigation li a:hover {
+  color: #DB904B;
+  background-color: #70E2FF;
+}
+
+.navigation li a.active {
+  color: #70E2FF;
+  background-color: #22798F;
+  font-weight: bold;
+  border-radius: 0.3rem;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) and accounted for here */
+.open li {
+  display: block;
+  width: 90%;
+}
+
+.open li a {
+  display: block;
+}
+
+/**************************************** NAVIGATION STYLES > 550px *********************************************/
+@media (min-width: 550px) {
+  #menu {
+    display: none; /* hide hamburger button */
+  }
+  nav {
+    display: block;
+    max-width: 100%;
+  }
+  .navigation {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: end;
+  }
+  .navigation li {
+    display: block;
+  }
+  .navigation li a {
+    color: #f0fcff;
+    transition: color 0.5s;
+  }
+  .navigation li a:hover {
+    color: #DB904B;
+    background-color: #22798F;
+  }
+  .navigation li a.active {
+    color: #22798F;
+    background-color: #f0fcff;
+    font-weight: bold;
+  }
+}
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  margin: 0;
+}
+header h1 {
+  margin: 0 0.5rem 0.1rem 0.1rem;
+  font-weight: calc(var(--wght) + 300);
+  color: #434545;
+}
+header img {
+  border: none;
+  width: 100%;
+  height: auto;
+}
+
+main {
+  padding: 1.5rem;
+}
+
+@media (min-width: 550px) {
+  header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+  }
+  header h1 {
+    font-size: clamp(3rem, -0.875rem + 10.333vw, 8.5rem);
+    display: inline;
+  }
+  header img {
+    border: 3px solid #8F4F14;
+    border-radius: 50%;
+    margin: 1rem;
+  }
+  nav {
+    grid-column: 1/-1;
+    width: 100%;
+  }
+}
 form {
   width: clamp(90%, 600px, 900px);
   margin: 2rem auto 3rem auto;

@@ -1,0 +1,83 @@
+/*************************************** NAVIGATION *******************************************/ 
+
+#menu {
+	font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    padding-top: .9rem;
+    margin: 0;
+}
+
+#menu.open::before {
+	content: "✕ ";
+}
+nav {
+    background-color: $darkblue;
+}
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+    margin-right: 1rem;
+}
+.navigation li {
+	display: none;
+}
+.navigation li a {
+	display: block;
+	padding: 1rem;
+	text-align: center;
+	color: $links;
+    text-decoration: none;
+    transition: .5s;
+}
+.navigation li a:hover {
+	color: $tan;
+	background-color: $lightblue;
+}
+.navigation li a.active {
+    color: $lightblue;
+    background-color: $darkblue;
+    font-weight: bold;
+    border-radius: .3rem;
+}
+/* when the button is clicked - the open class is toggled (added/removed) and accounted for here */
+.open li {
+	display: block;
+	width: 90%;
+}
+.open li a {
+	display: block;
+}
+/**************************************** NAVIGATION STYLES > 550px *********************************************/
+@media (min-width: 550px) {
+    #menu {
+        display: none; /* hide hamburger button */
+    }
+    nav {
+        display: block;
+        max-width: 100%;
+        // background-color: $darkblue;       
+    }   
+    .navigation {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: end;
+    }    
+    .navigation li {
+        display: block;
+    } 
+    .navigation li a {
+        color: $links;
+        transition: color .5s;
+    }    
+    .navigation li a:hover {
+        color: $tan;
+        background-color: $darkblue;
+    }    
+    .navigation li a.active {
+        color: $darkblue;
+        background-color: $links;
+        font-weight: bold;
+    }
+}

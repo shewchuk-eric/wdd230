@@ -22,7 +22,15 @@ html {
 body {
     max-width: 100%;
     background-color: white;
-    padding: 2rem;
+}
+#banner {
+    position: absolute;
+    background: transparent url("../images/title-background.webp") padding-box no-repeat;
+    background-size: cover;
+    margin: 1rem;
+    padding: 0 .2rem;
+    max-width: fit-content;
+    border-radius: .5rem;
 }
 h1 {
     font-size: var(--s2);
@@ -30,4 +38,14 @@ h1 {
 }
 h2 {
     font-size: var(--s1);
+}
+iframe {
+    max-width: 100%;
+    height: auto;
+}
+@media (min-width: 550px) {
+    #banner {
+        position: relative;
+        border-radius: .5rem;
+    }
 }

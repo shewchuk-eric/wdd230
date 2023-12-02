@@ -1,0 +1,44 @@
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+header {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    & h1 {
+        margin: 0 .5rem .1rem .1rem;
+        font-weight: calc(var(--wght) + 300);
+        color: lighten($text, 10%);
+    }
+    & img {
+        border: none;
+        width: 100%;
+        height: auto;
+    }
+}
+main {
+    padding: 1.5rem;
+}
+@media (min-width: 550px) {
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+        & h1 {
+            font-size: clamp(3rem, -0.875rem + 10.333vw, 8.5rem);;
+            display: inline;
+        }
+        & img {
+            border: $border;
+            border-radius: 50%;
+            margin: 1rem;
+
+        }
+    }
+    nav {
+        grid-column: 1/-1;
+        width: 100%;
+    }
+}

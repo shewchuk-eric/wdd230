@@ -22,11 +22,15 @@
     <header>
         <div id="banner">
         <h1>Scoots!</h1>
-            <img src="images/hero-fullsize.webp" alt="image of Hawaiian Nene Geese" width="1200" height="450" class="hero">
         </div>
+            <picture>
+                <source srcset="images/hero-mobile.webp" media="(max-width: 550px)">
+                <img src="images/hero.webp" alt="people having fun on a scooter" width="261" height="261">
+            </picture>
+        
         
         <nav>
-            <button id="menu"></button>
+            <div id="menu">Menu</div>
             <ul class="navigation">
                 <li><a href="#" class="active">Home</a></li>
                 <li><a href="rentals.html">Rentals</a></li>
@@ -35,7 +39,13 @@
             </ul>
         </nav>
     </header>
+
     <main>
+        <div class="right">
+            <h2>It's going to be a great day!</h2>
+            <p>Experience the beauty of Cozumel with freedom and independence you'll never get from a taxi or tour bus. Our scooters will take you places that everyone else has to walk to.  Or, take a jeep to the hidden parts of the island where you just can't go by any other way.</p>
+            <img src="images/scooter-girl.webp" alt="woman on scooter" width="300" height="450">
+        </div>
         <!--
             📄 The Home page is a contemporary, exciting landing page providing images of the island and rental facilities and must include the following:
                 A call to action to make a rental reservation.
@@ -70,5 +80,6 @@
         
     </footer>
     <script src="scripts/weather.js"></script>
+    <script src="scripts/scoots.js"></script>
 </body>
 </html>
