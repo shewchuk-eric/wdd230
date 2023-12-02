@@ -20,7 +20,13 @@
     $links: lighten($lightblue, 25%);
 
     $border: 3px solid $brown;
-    $center: 0 auto;
+    $center: 1rem auto;
+
+    // create mixins
+@mixin border($thick, $rad) {
+    border: $thick solid $brown;
+    border-radius: $rad;
+}
 
 /******************** end of normalize ********************/
 

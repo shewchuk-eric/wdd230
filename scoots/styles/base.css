@@ -218,6 +218,7 @@ h1 {
 
 h2 {
   font-size: var(--s1);
+  margin-left: 2.5rem;
 }
 
 iframe {
@@ -238,6 +239,15 @@ iframe {
   text-align: center;
   padding-top: 0.9rem;
   margin: 0;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+a:hover {
+  color: #DB904B;
 }
 
 #menu.open::before {
@@ -264,13 +274,12 @@ nav {
   padding: 1rem;
   text-align: center;
   color: #f0fcff;
-  text-decoration: none;
   transition: 0.5s;
 }
 
 .navigation li a:hover {
-  color: #DB904B;
   background-color: #70E2FF;
+  color: #DB904B;
 }
 
 .navigation li a.active {
@@ -288,6 +297,19 @@ nav {
 
 .open li a {
   display: block;
+}
+
+#cta {
+  border: 2px solid #8F4F14;
+  border-radius: 0.5rem;
+  max-width: max-content;
+  padding: 1rem;
+  font-size: var(--s0);
+  background-color: #70E2FF;
+  margin: 1rem auto;
+}
+#cta a {
+  color: #8F4F14;
 }
 
 /**************************************** NAVIGATION STYLES > 550px *********************************************/
@@ -309,10 +331,8 @@ nav {
   }
   .navigation li a {
     color: #f0fcff;
-    transition: color 0.5s;
   }
   .navigation li a:hover {
-    color: #DB904B;
     background-color: #22798F;
   }
   .navigation li a.active {
@@ -346,6 +366,28 @@ main {
   padding: 1.5rem;
 }
 
+.right {
+  background-color: #f0fcff;
+  padding: 2rem;
+  max-width: 90%;
+  margin: 1rem auto;
+  border: 2px solid #8F4F14;
+  border-radius: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.right h2 {
+  width: 100%;
+}
+.right p {
+  max-width: 66ch;
+}
+.right img {
+  max-width: 100%;
+  height: auto;
+  flex-shrink: 2;
+}
+
 @media (min-width: 550px) {
   header {
     display: grid;
@@ -368,7 +410,7 @@ main {
   }
 }
 form {
-  width: clamp(90%, 600px, 900px);
+  max-width: 600px;
   margin: 2rem auto 3rem auto;
   background-color: #bdf2ff;
   padding: 0.7rem;

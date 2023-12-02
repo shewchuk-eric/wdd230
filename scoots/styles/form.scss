@@ -1,5 +1,5 @@
 form {
-    width: clamp(90%, 600px, 900px);
+    max-width: 600px;
     margin: 2rem auto 3rem auto;
     background-color: lighten($lightblue, 15%);
     padding: .7rem;

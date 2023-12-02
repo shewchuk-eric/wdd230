@@ -20,6 +20,27 @@ header {
 main {
     padding: 1.5rem;
 }
+.right {
+    background-color: $links;
+    padding: 2rem;
+    max-width: 90%;
+    margin: $center;
+    @include border(2px, 1rem);
+    display: flex;
+    flex-wrap: wrap;
+    & h2 {
+        width: 100%;
+    }
+    & p {
+        max-width: 66ch;
+        // flex-shrink: 0;
+    }
+    & img {
+        max-width: 100%;
+        height: auto;
+        flex-shrink: 2;
+    }
+}
 @media (min-width: 550px) {
     header {
         display: grid;
@@ -31,10 +52,8 @@ main {
             display: inline;
         }
         & img {
-            border: $border;
-            border-radius: 50%;
+            @include border(3px, 50%);
             margin: 1rem;
-
         }
     }
     nav {

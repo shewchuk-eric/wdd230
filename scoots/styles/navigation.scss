@@ -7,7 +7,13 @@
     padding-top: .9rem;
     margin: 0;
 }
-
+a {
+    text-decoration: none;
+    transition: .5s;
+}
+a:hover {
+    color: $tan;
+}
 #menu.open::before {
 	content: "✕ ";
 }
@@ -28,12 +34,11 @@ nav {
 	padding: 1rem;
 	text-align: center;
 	color: $links;
-    text-decoration: none;
     transition: .5s;
 }
 .navigation li a:hover {
-	color: $tan;
 	background-color: $lightblue;
+    color: $tan;
 }
 .navigation li a.active {
     color: $lightblue;
@@ -48,6 +53,17 @@ nav {
 }
 .open li a {
 	display: block;
+}
+#cta {
+    @include border(2px, .5rem);
+    max-width: max-content;
+    padding: 1rem;
+    font-size: var(--s0);
+    background-color: $lightblue;
+    margin: $center;
+    & a {
+        color: $brown;
+    }
 }
 /**************************************** NAVIGATION STYLES > 550px *********************************************/
 @media (min-width: 550px) {
@@ -69,10 +85,8 @@ nav {
     } 
     .navigation li a {
         color: $links;
-        transition: color .5s;
     }    
     .navigation li a:hover {
-        color: $tan;
         background-color: $darkblue;
     }    
     .navigation li a.active {
