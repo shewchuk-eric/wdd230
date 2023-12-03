@@ -53,4 +53,7 @@ iframe {
     p {
         font-size: clamp(1rem, -0.875rem + 4.333vw, 2.5rem);
     }
+    .rentalInfo p {
+        font-size: clamp(1rem, -0.875rem + 2.333vw, 2rem);
+    }
 }

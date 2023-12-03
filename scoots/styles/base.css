@@ -235,6 +235,9 @@ iframe {
   p {
     font-size: clamp(1rem, -0.875rem + 4.333vw, 2.5rem);
   }
+  .rentalInfo p {
+    font-size: clamp(1rem, -0.875rem + 2.333vw, 2rem);
+  }
 }
 /*************************************** NAVIGATION *******************************************/
 #menu {
@@ -407,6 +410,7 @@ main {
 .rentalInfo {
   display: flex;
   align-content: center;
+  justify-content: space-between;
   flex-direction: column;
   flex-wrap: wrap;
   gap: 1rem;
@@ -416,6 +420,8 @@ main {
   border-radius: 1rem;
   text-align: center;
   max-width: 90%;
+  box-sizing: border-box;
+  padding: 0 1rem 1rem 1rem;
 }
 .rentalInfo img {
   display: block;
