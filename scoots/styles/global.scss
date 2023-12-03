@@ -43,10 +43,14 @@ h2 {
 iframe {
     max-width: 100%;
     height: auto;
+    margin: $center;
 }
 @media (min-width: 550px) {
     #banner {
         position: relative;
         border-radius: .5rem;
+    }
+    p {
+        font-size: clamp(1rem, -0.875rem + 4.333vw, 2.5rem);
     }
 }

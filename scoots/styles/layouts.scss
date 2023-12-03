@@ -28,18 +28,61 @@ main {
     @include border(2px, 1rem);
     display: flex;
     flex-wrap: wrap;
-    & h2 {
-        width: 100%;
-    }
+    justify-content: center;
     & p {
-        max-width: 66ch;
-        // flex-shrink: 0;
+        max-width: 60ch;
+        flex-shrink: 1;
+        margin-right: 1rem;
     }
     & img {
-        max-width: 100%;
+        max-width: 75vw;
         height: auto;
         flex-shrink: 2;
     }
+}
+.weather {
+    background-color: lighten($text, 30%);
+    padding: 2rem;
+    max-width: 90%;
+    margin: $center;
+    @include border(2px, 1rem);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.rentalInfo {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+    & article {
+        @include border(1px, 1rem);
+        text-align: center;
+        max-width: 90%;
+    }
+    & img {
+        display: block;
+        margin: .5rem auto;
+    }
+}
+footer {
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    & a {
+        margin-left: 1rem;
+    }
+    & img {
+        width: 75px;
+        height: auto;
+    }
+}
+#contact {
+    padding: 2rem;
 }
 @media (min-width: 550px) {
     header {
@@ -48,7 +91,7 @@ main {
         align-items: center;
         justify-items: center;
         & h1 {
-            font-size: clamp(3rem, -0.875rem + 10.333vw, 8.5rem);;
+            font-size: clamp(3rem, -0.875rem + 10.333vw, 8.5rem);
             display: inline;
         }
         & img {
@@ -59,5 +102,36 @@ main {
     nav {
         grid-column: 1/-1;
         width: 100%;
+    }
+    .right {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        & p {
+            max-width: 60ch;
+            // flex-shrink: 1;
+        }
+        & img {
+            max-width: 25vw;
+            height: auto;
+            // flex-shrink: 2;
+        }
+    }
+    .rentalInfo {
+        flex-direction: row;
+        flex-wrap: wrap;
+        & article {
+            @include border(1px, 1rem);
+            text-align: center;
+            max-width: 30%;
+        }
+    }
+}
+@media (min-width: 665px) {
+    footer {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
     }
 }

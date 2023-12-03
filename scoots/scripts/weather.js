@@ -24,30 +24,24 @@ async function apiFetch() {
 apiFetch();
 
 function displayResults(data) {
-    let i=0;
-    let item = data.list[i]; // define the base to shorten following lines of code
+    let item = data.list[0]; // define the base to shorten following lines of code
     currentTemp.innerHTML = `${Math.trunc(item.main.temp)} &deg;F`;
     speed.innerHTML = `${item.wind.speed} mph`;
     chill.innerHTML = `${item.main.feels_like} &deg; F`;
-    const iconsrc = `https://openweathermap.org/img/w/${item.weather[i].icon}.png`;
-    let desc = item.weather[i].description;
+    const iconsrc = `https://openweathermap.org/img/w/${item.weather[0].icon}.png`;
+    let desc = item.weather[0].description;
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', `icon for ${desc}`);
     captionDesc.innerHTML = `${desc}`;
-    i = i+8;
-    while (i<25) { // loop through forecast data and display to page
-        let loopItem = data.list[i];
-        let nextTemp = document.createElement('div'); // create space for forecast
-        nextTemp.setAttribute('class', 'temperature');
-        let icon = document.createElement('img'); // create image element
-        const newIcon = `https://openweathermap.org/img/w/${loopItem.weather[0].icon}.png`;
-        let newDesc = loopItem.weather[0].description;
-        icon.setAttribute('src', newIcon);
-        icon.setAttribute('alt', `icon for ${newDesc}`);
-        nextTemp.innerHTML = `${Math.trunc(loopItem.main.temp)} &deg;F`;
-        // nextTemp.appendChild(icon);
-        forecast.appendChild(nextTemp);
-        forecast.appendChild(icon);
-        i=i+8;
-    }
+    let loopItem = data.list[8];
+    let nextTemp = document.createElement('p'); // create space for forecast
+    nextTemp.setAttribute('class', 'temperature');
+    let icon = document.createElement('img'); // create image element
+    const newIcon = `https://openweathermap.org/img/w/${loopItem.weather[0].icon}.png`;
+    let newDesc = loopItem.weather[0].description;
+    icon.setAttribute('src', newIcon);
+    icon.setAttribute('alt', `icon for ${newDesc}`);
+    nextTemp.innerHTML = `${Math.trunc(loopItem.main.temp)} &deg;F`;
+    forecast.appendChild(nextTemp);
+    forecast.appendChild(icon);
 }

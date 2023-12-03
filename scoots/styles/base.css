@@ -224,12 +224,16 @@ h2 {
 iframe {
   max-width: 100%;
   height: auto;
+  margin: 1rem auto;
 }
 
 @media (min-width: 550px) {
   #banner {
     position: relative;
     border-radius: 0.5rem;
+  }
+  p {
+    font-size: clamp(1rem, -0.875rem + 4.333vw, 2.5rem);
   }
 }
 /*************************************** NAVIGATION *******************************************/
@@ -375,17 +379,67 @@ main {
   border-radius: 1rem;
   display: flex;
   flex-wrap: wrap;
-}
-.right h2 {
-  width: 100%;
+  justify-content: center;
 }
 .right p {
-  max-width: 66ch;
+  max-width: 60ch;
+  flex-shrink: 1;
+  margin-right: 1rem;
 }
 .right img {
-  max-width: 100%;
+  max-width: 75vw;
   height: auto;
   flex-shrink: 2;
+}
+
+.weather {
+  background-color: #767878;
+  padding: 2rem;
+  max-width: 90%;
+  margin: 1rem auto;
+  border: 2px solid #8F4F14;
+  border-radius: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.rentalInfo {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.rentalInfo article {
+  border: 1px solid #8F4F14;
+  border-radius: 1rem;
+  text-align: center;
+  max-width: 90%;
+}
+.rentalInfo img {
+  display: block;
+  margin: 0.5rem auto;
+}
+
+footer {
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+footer a {
+  margin-left: 1rem;
+}
+footer img {
+  width: 75px;
+  height: auto;
+}
+
+#contact {
+  padding: 2rem;
 }
 
 @media (min-width: 550px) {
@@ -408,27 +462,49 @@ main {
     grid-column: 1/-1;
     width: 100%;
   }
+  .right {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  .right p {
+    max-width: 60ch;
+  }
+  .right img {
+    max-width: 25vw;
+    height: auto;
+  }
+  .rentalInfo {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .rentalInfo article {
+    border: 1px solid #8F4F14;
+    border-radius: 1rem;
+    text-align: center;
+    max-width: 30%;
+  }
 }
-form {
+@media (min-width: 665px) {
+  footer {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+  }
+}
+#form {
   max-width: 600px;
   margin: 2rem auto 3rem auto;
   background-color: #bdf2ff;
   padding: 0.7rem;
-}
-
-fieldset {
   border: 3px solid #8F4F14;
-  color: #22798F;
-}
-
-legend {
-  margin: 0 0 0 1.5rem;
-  padding: 0 1rem;
-  color: #22798F;
+  border-radius: 1rem;
 }
 
 label, input, textarea {
   display: block;
+  line-height: 1.5rem;
 }
 
 textarea {

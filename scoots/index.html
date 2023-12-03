@@ -42,24 +42,11 @@
 
     <main>
         <div id="cta"><a href="reservations.html">Make A Reservation!</a></div>
-        <div class="right">
-            <h2>It's going to be a great day!</h2>
+        <h2>It's going to be a great day!</h2>
+        <article class="right"> 
             <p>Experience the beauty of Cozumel with freedom and independence you'll never get from a taxi or tour bus. Our scooters will take you places that everyone else has to walk to.  Or, take a jeep to the hidden parts of the island where you just can't go by any other way.</p>
             <img src="images/scooter-girl.webp" alt="woman on scooter" width="300" height="450">
-        </div>
-        <!--
-            📄 The Home page is a contemporary, exciting landing page providing images of the island and rental facilities and must include the following:
-                A call to action to make a rental reservation.
-                Readily available navigation and contact information.
-                Summary information about all the types of rentals.
-                Social media links (a general link is OK)
-                The current weather information, obtained from the free version of openweathermap.org.
-                ✔️ Include at least the current temperature, current condition description, and humidity.
-                ✔️ Include any weather alerts if available (applicable) from the government and display it as a closeable message at the top of the page.
-                ✔️ Also display and label a one day forecast.
-        -->
-
-        
+        </article>
 
         <section class="weather">
             <article id="sunshine">
@@ -71,16 +58,29 @@
                 </figure>
                 <p>Wind Speed: <span id="speed"></span></p>
                 <p>Feels Like: <span id="chill"></span></p>
-                <hr>
-            <h3>3 Day Forecast</h3>
-                <article id="forecast"></article>
             </article>
+            <article id="forecast">   
+                <h3>Tomorrow's Forecast</h3>
+            </article>          
+        </section>
+
+        <h2>Rental Options</h2>
+        <section class="rentalInfo">
+            <article><h3>Scooters</h3><p>Three models to choose from with prices as low as $20!</p><img src="images/image.webp"><a href="rentals.html">Learn More</a></article>
+            <article><h3>ATV's</h3><p>Choose your own adventure for as little as $50</p><img src="images/image.webp"><a href="rentals.html">Learn More</a></article>
+            <article><h3>Jeep's</h3><p>Ride in style and comfort.  Starting at $60</p><img src="images/image.webp"><a href="rentals.html">Learn More</a></article>
         </section>
     </main>
+
     <footer>
-        
+        <span id="social">
+        <a href="https://twitter.com/"><img src="images/twitter.png" alt="twitter icon"></a>
+        <a href="https://www.facebook.com/"><img src="images/fb.png" alt="facebook icon"></a>
+        <a href="https://www.instagram.com/"><img src="images/instagram.png" alt="instagram icon"></a>
+        </span>
+        <span id="contact">Phone: 011 +52+987+5551212<br>email: scoots@notarealcompany.com</span>
     </footer>
-    <script src="scripts/weather.js"></script>
     <script src="scripts/scoots.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 </html>
