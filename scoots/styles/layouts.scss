@@ -41,7 +41,7 @@ main {
     }
 }
 .weather {
-    background-color: lighten($text, 30%);
+    background-color: lighten($text, 55%);
     padding: 2rem;
     max-width: 90%;
     margin: $center;
@@ -94,6 +94,12 @@ footer {
 }
 #contact {
     padding: 2rem;
+}
+#content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
 }
 @media (min-width: 550px) {
     header {

@@ -51,4 +51,7 @@ h2 {
     .rentalInfo p {
         font-size: clamp(1rem, -0.875rem + 2.333vw, 2rem);
     }
+    .weather p, .weather figcaption {
+        font-size: clamp(1rem, -0.875rem + 1.8vw, 2rem);
+    }
 }

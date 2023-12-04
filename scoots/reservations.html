@@ -11,11 +11,11 @@
     <meta property="og:title" content="A sample website from The Clever Primate">
     <meta property="og:type" content="article">
     <meta property="og:description" content="Scoots Rentals - sample website.">
-    <!--<meta property="og:image" content="https://shewchuk-eric.github.io/wdd230/images/thoughtfulMonkey.jpg">
-    <meta property="og:url" content="https://shewchuk-eric.github.io/wdd230/">-->
+    <meta property="og:image" content="https://shewchuk-eric.github.io/wdd230/scoots/images/riding-scooter.webp">
+    <meta property="og:url" content="https://shewchuk-eric.github.io/wdd230/scoots/">
     <meta property="og:site_name" content="Scoots Rentals, Cozumel">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image:alt" content="">    
+    <meta name="twitter:image:alt" content="having fun with scoots">    
 </head>
 
 <body>
@@ -29,7 +29,7 @@
             </picture>
         
         <nav>
-            <button id="menu"></button>
+            <div id="menu"></div>
             <ul class="navigation">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="rentals.html">Rentals</a></li>
@@ -41,7 +41,7 @@
     <main>
         <h1>Important rental information:</h1>
         <section class="right">
-            <span>
+            <div>
                 <ul>
                     <li>A $50 security deposit is required to confirm reservations.</li>
                     <li>A valid drivers license is required in hand at the time of rental.</li>
@@ -49,16 +49,16 @@
                     <li>Fuel charge is not included.</li>
                     <li>Unlimited mileage.</li>
                 </ul>
-            </span>
-            <span>
+            </div>
+            <div>
                 <ul>
                     <li>Liability insurance is included.</li>
                     <li>Damage insurance is available for purchase.</li>
                     <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
                     <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
-                    <li>Rentals may be returned to either of our <a href="rentals.html">locations.</a></li>
+                    <li>Rentals may be returned to either of our <a href="contact.html">locations.</a></li>
                 </ul>
-            </span>
+            </div>
         </section>
 
         <section class="formb">
@@ -71,7 +71,7 @@
                 <label>Home Country <input type="text"></label>
                 <label>Date <input type="date"></label> 
             </span>
-            <span>
+            <div>
                 <label>How Long?
                 <select>
                     <option value=" ">choose rental period</option>
@@ -90,15 +90,17 @@
                     <option value="Pioneer ATV">Honda Pioneer ATV</option>
                     <option value="2 Door Wrangler">2 Door Jeep Wrangler</option>
                     <option value="4 Door Wrangler">4 Door Jeep Wrangler</option>
-                </select></label> 
+                </select></label>
+                <div class="field"> 
                 <label>Do You Need More Than 1 Vehicle?<br>Yes<input type="radio" name="yes-no" value="Yes"></label>
                 <label>No <input type="radio" name="yes-no" value="No"></label>
+                </div>
                 <label><input type="checkbox" id="cruise">I'm arriving on a cruise ship</label>
                 <label id="lineLabel">What cruise line?<input type="text" id="line"></label>      
                 <label>Do you need delivery/have any comments?<textarea id="comment" name="comment"></textarea></label>
                 <button id="showMessage">Make My Reservation</button>
                 <div id="submission"></div>
-            </span>
+            </div>
         </section>
     </main>
 

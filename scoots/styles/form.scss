@@ -1,3 +1,4 @@
+/******************** FORM STYLES ********************/
 .form, .formb {
     max-width: 600px;
     margin: 2rem auto 3rem auto;
@@ -10,15 +11,24 @@ label, input, textarea, select {
     line-height: 1.5rem;
     width: 80%;
     max-width: 400px;
+    margin-bottom: 1rem;
 }
-textarea {
+textarea, .field {
     @include border(1px, 4px);
     padding: .75rem;
     margin-bottom: 1rem;
 }
+.field {
+    width: 65%;
+    max-width: 350px;
+    & label {
+        margin-bottom: .5rem;
+    }
+}
 input[type="radio"], input[type="checkbox"] {
     display: inline;
     width: 2rem;
+    margin-bottom: 0;
 }
 #line, #lineLabel {
     display: none;
@@ -28,27 +38,37 @@ input[type="radio"], input[type="checkbox"] {
     padding: 1.5rem;
     color: $brown;
 }
+/******************** TABLE STYLES ********************/
 table {
-    border: $border;
+    @include border(2px, 0);
     border-collapse: collapse;
     margin-top: 2rem;
 }
 thead {
-    background: $tan;
-    font-size: 1rem;
+    background: $links;
+    font-size: 1.3rem;
+    & tr:nth-child(even) {
+        background-color: white;
+    }
+    & tr:nth-child(3) {
+        background-color: $brown;
+        color: white;
+        font-size: .9rem;
+    }
 }
 th, td {
-	padding: 7px 15px;
-	border: $border
+	padding: .6rem 1.2rem;
+	@include border(1px, 0);
 }
 .lite {
     background: lighten($tan, 15%);
 }
 td {
 	text-align: center;
+    width: 3.9rem;
 }
-tbody tr:nth-child(even) {
-	background-color: lighten($tan, 25%);
+tbody tr:nth-child(1n+2) {
+	background-color: $links;
 }
 @media (min-width: 550px) {
     .formb {

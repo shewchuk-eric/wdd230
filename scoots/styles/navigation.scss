@@ -59,7 +59,7 @@ nav {
     max-width: max-content;
     padding: 1rem;
     font-size: var(--s0);
-    background-color: $lightblue;
+    background-color: lighten($lightblue, 10%);
     margin: $center;
     & a {
         color: $brown;

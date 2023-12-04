@@ -232,6 +232,9 @@ h2 {
   .rentalInfo p {
     font-size: clamp(1rem, -0.875rem + 2.333vw, 2rem);
   }
+  .weather p, .weather figcaption {
+    font-size: clamp(1rem, -0.875rem + 1.8vw, 2rem);
+  }
 }
 /*************************************** NAVIGATION *******************************************/
 #menu {
@@ -306,7 +309,7 @@ nav {
   max-width: max-content;
   padding: 1rem;
   font-size: var(--s0);
-  background-color: #70E2FF;
+  background-color: #a3ecff;
   margin: 1rem auto;
 }
 #cta a {
@@ -390,7 +393,7 @@ main {
 }
 
 .weather {
-  background-color: #767878;
+  background-color: #b6b8b8;
   padding: 2rem;
   max-width: 90%;
   margin: 1rem auto;
@@ -452,6 +455,13 @@ footer img {
   padding: 2rem;
 }
 
+#content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
 @media (min-width: 550px) {
   header {
     display: grid;
@@ -503,6 +513,7 @@ footer img {
     text-align: left;
   }
 }
+/******************** FORM STYLES ********************/
 .form, .formb {
   max-width: 600px;
   margin: 2rem auto 3rem auto;
@@ -517,18 +528,28 @@ label, input, textarea, select {
   line-height: 1.5rem;
   width: 80%;
   max-width: 400px;
+  margin-bottom: 1rem;
 }
 
-textarea {
+textarea, .field {
   border: 1px solid #8F4F14;
   border-radius: 4px;
   padding: 0.75rem;
   margin-bottom: 1rem;
 }
 
+.field {
+  width: 65%;
+  max-width: 350px;
+}
+.field label {
+  margin-bottom: 0.5rem;
+}
+
 input[type=radio], input[type=checkbox] {
   display: inline;
   width: 2rem;
+  margin-bottom: 0;
 }
 
 #line, #lineLabel {
@@ -541,20 +562,31 @@ input[type=radio], input[type=checkbox] {
   color: #8F4F14;
 }
 
+/******************** TABLE STYLES ********************/
 table {
-  border: 3px solid #8F4F14;
+  border: 2px solid #8F4F14;
+  border-radius: 0;
   border-collapse: collapse;
   margin-top: 2rem;
 }
 
 thead {
-  background: #DB904B;
-  font-size: 1rem;
+  background: #f0fcff;
+  font-size: 1.3rem;
+}
+thead tr:nth-child(even) {
+  background-color: white;
+}
+thead tr:nth-child(3) {
+  background-color: #8F4F14;
+  color: white;
+  font-size: 0.9rem;
 }
 
 th, td {
-  padding: 7px 15px;
-  border: 3px solid #8F4F14;
+  padding: 0.6rem 1.2rem;
+  border: 1px solid #8F4F14;
+  border-radius: 0;
 }
 
 .lite {
@@ -563,10 +595,11 @@ th, td {
 
 td {
   text-align: center;
+  width: 3.9rem;
 }
 
-tbody tr:nth-child(even) {
-  background-color: #f0d2b5;
+tbody tr:nth-child(1n+2) {
+  background-color: #f0fcff;
 }
 
 @media (min-width: 550px) {

@@ -2,10 +2,10 @@
     "rentals": [
         {
         "name": "Honda Metro",
-        "type": "scooter",
+        "type": "Scooter",
         "motor": "49cc",
         "capacity": "1",
-        "pic": "<img src='images/metro.webp' alt='Honda Metropolitan scooter'>",
+        "pic": "'images/metro.webp' alt='Honda Metropolitan scooter'",
         "pricing": [
             {
             "reservation": [
@@ -22,10 +22,10 @@
             ]}]},
         {
         "name": "Honda Dio",
-        "type": "scooter",
+        "type": "Scooter",
         "motor": "110cc",
         "capacity": "2",
-        "pic": "<img src='images/dio.webp' alt='Honda Dio scooter'>",
+        "pic": "'images/dio.webp' alt='Honda Dio scooter'",
         "pricing": [
             {
             "reservation": [
@@ -42,10 +42,10 @@
             ]}]},
         {
         "name": "Honda PCX150",
-        "type": "scooter",
+        "type": "Scooter",
         "motor": "149cc",
         "capacity": "2",
-        "pic": "<img src='images/pcx.webp' alt='Honda PCX150 scooter'>",
+        "pic": "'images/pcx.webp' alt='Honda PCX150 scooter'",
         "pricing": [
             {
             "reservation": [
@@ -65,7 +65,7 @@
         "type": "ATV",
         "motor": "1000cc",
         "capacity": "4",
-        "pic": "<img src='images/pioneer.webp' alt='Honda Pioneer ATV'>",
+        "pic": "'images/pioneer.webp' alt='Honda Pioneer ATV'",
         "pricing": [
             {
             "reservation": [
@@ -82,10 +82,10 @@
             ]}]},
         {
         "name": "Jeep Wrangler - 2 Door",
-        "type": "jeep",
+        "type": "",
         "motor": "n/a",
         "capacity": "4",
-        "pic": "<img src='images/wrangler2.webp' alt='Jeep Wrangler 2 door'>",
+        "pic": "'images/wrangler2.webp' alt='Jeep Wrangler 2 door'",
         "pricing": [
             {
             "reservation": [
@@ -102,10 +102,10 @@
             ]}]},
         {
         "name": "Jeep Wrangler - 4 Door W/AC",
-        "type": "scooter",
+        "type": "",
         "motor": "149cc",
         "capacity": "2 person",
-        "pic": "<img src='images/wrangler4.webp' alt='Jeep Wrangler 4 door'>",
+        "pic": "'images/wrangler4.webp' alt='Jeep Wrangler 4 door'",
         "pricing": [
             {
             "reservation": [
