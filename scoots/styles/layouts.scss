@@ -69,6 +69,14 @@ main {
         margin: .5rem auto;
     }
 }
+#map {
+    display: flex;
+    justify-content: center;
+}
+iframe {
+    max-width: 100%;
+    display: inline;
+}
 footer {
     padding: 2rem 1rem;
     display: flex;

@@ -39,34 +39,78 @@
         </nav>
     </header>
     <main>
-        <!--
-            📄 The Reservations page that contains:
-                rental agreement information, and
-                a valid form that collects rental details such as the date, period, rental type, number, phone number, name, email, home state or country, cruise line if applicable, and special accommodations/comments such as the need and location of a drop-off request.
-                Use CSS Grid and/or CSS Flex to design the layout.
+        <h1>Important rental information:</h1>
+        <section class="right">
+            <span>
+                <ul>
+                    <li>A $50 security deposit is required to confirm reservations.</li>
+                    <li>A valid drivers license is required in hand at the time of rental.</li>
+                    <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+                    <li>Fuel charge is not included.</li>
+                    <li>Unlimited mileage.</li>
+                </ul>
+            </span>
+            <span>
+                <ul>
+                    <li>Liability insurance is included.</li>
+                    <li>Damage insurance is available for purchase.</li>
+                    <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                    <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+                    <li>Rentals may be returned to either of our <a href="rentals.html">locations.</a></li>
+                </ul>
+            </span>
+        </section>
 
-                Rental Services and Agreements
-                A $50 security deposit is required to confirm reservations.
-                A valid drivers license is required in hand at the time of rental.
-                No one under the age of 12 years of age are allowed to ride on the scooters.
-                Fuel charge is not included.
-                Unlimited mileage.
-                Liability insurance is included.
-                Damage insurance is available for purchase.
-                Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.
-                Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.
-                Rentals may be returned to either physical location.
-        -->
+        <section class="formb">
+            <h2>Apply For A Reservation</h2>
+            <span>
+                <label>First Name * <input type="text" id="fname" name="fname" required></label>
+                <label>Last Name * <input type="text" id="lname" name="lname" required></label>
+                <label>Email * <input type="email" id="email" name="email" required placeholder="myemail@gmail.com"></label>    
+                <label>Phone <input type="tel"></label>
+                <label>Home Country <input type="text"></label>
+                <label>Date <input type="date"></label> 
+            </span>
+            <span>
+                <label>How Long?
+                <select>
+                    <option value=" ">choose rental period</option>
+                    <option value="half">half day (3 hours)</option>
+                    <option value="full">full day</option>
+                    <option value="2">2 days</option>
+                    <option value="3">3 days</option>
+                    <option value="many">4 or more days</option>
+                </select></label>
+                <label>What Vehicle?
+                <select id="vehicleSelect">
+                    <option value="no vehicle selected ">choose vehicle</option>
+                    <option value="Metro Scooter">Honda Metro Scooter</option>
+                    <option value="Dio Scooter">Honda Dio Scooter</option>
+                    <option value="PCX150 Scooter">Honda PCX150 Scooter</option>
+                    <option value="Pioneer ATV">Honda Pioneer ATV</option>
+                    <option value="2 Door Wrangler">2 Door Jeep Wrangler</option>
+                    <option value="4 Door Wrangler">4 Door Jeep Wrangler</option>
+                </select></label> 
+                <label>Do You Need More Than 1 Vehicle?<br>Yes<input type="radio" name="yes-no" value="Yes"></label>
+                <label>No <input type="radio" name="yes-no" value="No"></label>
+                <label><input type="checkbox" id="cruise">I'm arriving on a cruise ship</label>
+                <label id="lineLabel">What cruise line?<input type="text" id="line"></label>      
+                <label>Do you need delivery/have any comments?<textarea id="comment" name="comment"></textarea></label>
+                <button id="showMessage">Make My Reservation</button>
+                <div id="submission"></div>
+            </span>
+        </section>
     </main>
-    
+
     <footer>
         <span id="social">
-        <a href="https://twitter.com/" target="_blank"><img src="images/twitter.png" alt="twitter icon"></a>
-        <a href="https://www.facebook.com/" target="_blank"><img src="images/fb.png" alt="facebook icon"></a>
-        <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.png" alt="instagram icon"></a>
-        </span>
+            <a href="https://twitter.com/" target="_blank"><img src="images/twitter.png" alt="twitter icon" width="75" height="7"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/fb.png" alt="facebook icon" width="75" height="75"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.png" alt="instagram icon" width="75" height="75"></a>
+            </span>
         <span id="contact">Phone: 011 +52+987+5551212<br>email: scoots@notarealcompany.com</span>
     </footer>
     <script src="scripts/scoots.js"></script>
+    <script src="scripts/reservation.js"></script>
 </body>
 </html>

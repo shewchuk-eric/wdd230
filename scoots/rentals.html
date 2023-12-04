@@ -39,46 +39,60 @@
         </nav>
     </header>
     <main>
+        <div id="cta"><a href="reservations.html">Make A Reservation!</a></div>
+        <h2>So many great options!</h2>
+        <div id="content"></div> <!-- content supplied dynamically using 'pricing.js' and 'pricing.json' -->
+
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="4" scope="row">Honda Dio Scooter</th>
+                </tr>
+                <tr>
+                    <th colspan="4" scope="row"><img src="images/pioneer-tn.webp" width="100" height="75" alt="pcx scooter" loading="lazy"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>✔️</td>
+                    <td>Newsletter</td>
+                </tr>
+                <tr>
+                    <td>✔️</td>
+                    <td>Free Business Resources</td>
+                </tr>
+                <tr>
+                    <td>❌</td>
+                    <td>Early Event Registration</td>
+                </tr>
+                <tr>
+                    <td>❌</td>
+                    <td>Free Networking Mixers</td>
+                </tr>
+                <tr>
+                    <td>❌</td>
+                    <td>Premium Promotional Placement</td>
+                </tr>
+            </tbody>
+        </table>
         <!--
             📄 The Rentals page describes the available rental options and prices with images.
                 The prices displayed on the site must be obtained from a JSON data source of your own making.
                 Store this .json file in a data 📁 folder in this project folder.
                 Incorporate a data table in your HTML structure to display some portion of this information.
                 IMAGES NEED LAZY LOADING!!!
-
-                Honda Motor Scooters
-                Honda Metropolitan (49cc) - 1 person
-                Honda Dio (110cc) - 2 person
-                Honda PCX150 (149cc) - 2 person
-                Side-by-Side ATVs
-                Honda Pioneer 1000 - 4 person
-                Jeeps
-                Jeep Wrangler - 4 door manuel with A/C - 5 person
-                Jeep Wrangler - 2 door - open air - manuel - 4 person
-
-                Pricing
-                Max Rental Pricing
-                Reservation	Walk-In
-                Rental Type	Max. Persons	Half Day
-                (3 hrs)	Full Day	Half Day
-                (3 hrs)	Full Day
-                ~Honda Metro Scooter	1	$20	$30	$25	$35
-                ~Honda Dio Scooter	2	$30	$40	$35	$45
-                ~Honda PCX150 Scooter	2	$40	$50	$45	$55
-                Honda Pioneer ATV	4	$50	$70	$60	$80
-                Jeep Wrangler - 4 door with a/c	5	$70	$100	$85	$125
-                Jeep Wrangler - 2 door	4	$60	$85	$70	$90
         -->
     </main>
-    
+
     <footer>
         <span id="social">
-        <a href="https://twitter.com/" target="_blank"><img src="images/twitter.png" alt="twitter icon"></a>
-        <a href="https://www.facebook.com/" target="_blank"><img src="images/fb.png" alt="facebook icon"></a>
-        <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.png" alt="instagram icon"></a>
-        </span>
+            <a href="https://twitter.com/" target="_blank"><img src="images/twitter.png" alt="twitter icon" width="75" height="7"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/fb.png" alt="facebook icon" width="75" height="75"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.png" alt="instagram icon" width="75" height="75"></a>
+            </span>
         <span id="contact">Phone: 011 +52+987+5551212<br>email: scoots@notarealcompany.com</span>
     </footer>
     <script src="scripts/scoots.js"></script>
+    <script src="scripts/pricing.js"></script>
 </body>
 </html>

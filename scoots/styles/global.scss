@@ -40,11 +40,6 @@ h2 {
     font-size: var(--s1);
     margin-left: 2.5rem;
 }
-iframe {
-    max-width: 100%;
-    height: auto;
-    margin: $center;
-}
 @media (min-width: 550px) {
     #banner {
         position: relative;

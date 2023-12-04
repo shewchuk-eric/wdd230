@@ -1,0 +1,124 @@
+{
+    "rentals": [
+        {
+        "name": "Honda Metro",
+        "type": "scooter",
+        "motor": "49cc",
+        "capacity": "1",
+        "pic": "<img src='images/metro.webp' alt='Honda Metropolitan scooter'>",
+        "pricing": [
+            {
+            "reservation": [
+                {
+                "half": "20",
+                "full": "30"
+                }
+            ],
+            "walkin": [
+                {
+                "half": "25",
+                "full": "35"
+                }
+            ]}]},
+        {
+        "name": "Honda Dio",
+        "type": "scooter",
+        "motor": "110cc",
+        "capacity": "2",
+        "pic": "<img src='images/dio.webp' alt='Honda Dio scooter'>",
+        "pricing": [
+            {
+            "reservation": [
+                {
+                "half": "30",
+                "full": "40"
+                }
+            ],
+            "walkin": [
+                {
+                "half": "35",
+                "full": "45"
+                }
+            ]}]},
+        {
+        "name": "Honda PCX150",
+        "type": "scooter",
+        "motor": "149cc",
+        "capacity": "2",
+        "pic": "<img src='images/pcx.webp' alt='Honda PCX150 scooter'>",
+        "pricing": [
+            {
+            "reservation": [
+                {
+                "half": "40",
+                "full": "50"
+                }
+            ],
+            "walkin": [
+                {
+                "half": "45",
+                "full": "55"
+                }
+            ]}]},
+        {
+        "name": "Honda Pioneer",
+        "type": "ATV",
+        "motor": "1000cc",
+        "capacity": "4",
+        "pic": "<img src='images/pioneer.webp' alt='Honda Pioneer ATV'>",
+        "pricing": [
+            {
+            "reservation": [
+                {
+                "half": "50",
+                "full": "70"
+                }
+            ],
+            "walkin": [
+                {
+                "half": "60",
+                "full": "80"
+                }
+            ]}]},
+        {
+        "name": "Jeep Wrangler - 2 Door",
+        "type": "jeep",
+        "motor": "n/a",
+        "capacity": "4",
+        "pic": "<img src='images/wrangler2.webp' alt='Jeep Wrangler 2 door'>",
+        "pricing": [
+            {
+            "reservation": [
+                {
+                "half": "60",
+                "full": "85"
+                }
+            ],
+            "walkin": [
+                {
+                "half": "70",
+                "full": "90"
+                }
+            ]}]},
+        {
+        "name": "Jeep Wrangler - 4 Door W/AC",
+        "type": "scooter",
+        "motor": "149cc",
+        "capacity": "2 person",
+        "pic": "<img src='images/wrangler4.webp' alt='Jeep Wrangler 4 door'>",
+        "pricing": [
+            {
+            "reservation": [
+                {
+                "half": "70",
+                "full": "100"
+                }
+            ],
+            "walkin": [
+                {
+                "half": "85",
+                "full": "125"
+                }
+            ]}]}
+        ]
+}
