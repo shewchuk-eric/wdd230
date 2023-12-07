@@ -30,7 +30,7 @@ const displayLinks = (rentals) => {
                 <th colspan="3" scope="row"><img src=${price.pic} width="150" height="113" loading="lazy"></th>
             </tr>
             <tr>
-                <th>''</th>
+                <th>  </th>
                 <th>Half Day (3hours)</th>
                 <th>Full Day</th>
             </tr>
